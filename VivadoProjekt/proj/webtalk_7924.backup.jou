@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Jan 04 13:13:54 2017
+# Process ID: 7924
+# Current directory: c:/Projects/jan2017/VivadoProjekt/proj
+# Command line: wbtcv.exe -mode batch -source C:/Projects/jan2017/VivadoProjekt/proj/.Xil/Vivado-11352-Thinkpad/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/Projects/jan2017/VivadoProjekt/proj/webtalk.log
+# Journal file: c:/Projects/jan2017/VivadoProjekt/proj\webtalk.jou
+#-----------------------------------------------------------
+source C:/Projects/jan2017/VivadoProjekt/proj/.Xil/Vivado-11352-Thinkpad/webtalk/labtool_webtalk.tcl -notrace

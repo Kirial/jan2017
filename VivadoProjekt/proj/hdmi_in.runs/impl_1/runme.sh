@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/taras/Desktop/proj/hdmi_in.runs/impl_1'
+HD_PWD='C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

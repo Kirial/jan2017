@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Jan 04 12:11:37 2017
+# Process ID: 12636
+# Current directory: C:/Projects/jan2017/VivadoProjekt/vga_Test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1716 C:\Projects\jan2017\VivadoProjekt\vga_Test\vga_Test.xpr
+# Log file: C:/Projects/jan2017/VivadoProjekt/vga_Test/vivado.log
+# Journal file: C:/Projects/jan2017/VivadoProjekt/vga_Test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/jan2017/VivadoProjekt/vga_Test/vga_Test.xpr
+launch_runs impl_1 -to_step write_bitstream
+make_wrapper -files [get_files C:/Projects/jan2017/VivadoProjekt/vga_Test/vga_Test.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Projects/jan2017/VivadoProjekt/vga_Test/vga_Test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_bd_design {C:/Projects/jan2017/VivadoProjekt/vga_Test/vga_Test.srcs/sources_1/bd/design_1/design_1.bd}
