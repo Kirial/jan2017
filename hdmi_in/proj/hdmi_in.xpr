@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/taras/Desktop/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/hdmi_in/proj/hdmi_in.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="59809322643147b58eecd4492ee02243"/>
