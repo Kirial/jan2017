@@ -2,83 +2,84 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Wed Jan 04 13:06:29 2017
-# Process ID: 7584
-# Current directory: C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1
+# Start of session at: Wed Jan 04 13:58:57 2017
+# Process ID: 5424
+# Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1
 # Command line: vivado.exe -log hdmi_in_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_in_wrapper.tcl
-# Log file: C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.vds
-# Journal file: C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1\vivado.jou
+# Log file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.vds
+# Journal file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source hdmi_in_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Projects/jan2017/VivadoProjekt/repo'; Can't find the specified path.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/repo'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
 WARNING: [BD 41-1661] One or more IPs have been locked in the design 'hdmi_in.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
 List of locked IPs:
 hdmi_in_axi_dynclk_0_0
-hdmi_in_dvi2rgb_0_0
 hdmi_in_rgb2vga_0_0
 
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 277.289 ; gain = 66.191
 Command: synth_design -top hdmi_in_wrapper -part xc7z010clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
 Starting synth_design
 WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd
+C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd
 
 WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd
+C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd
 
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13796 
+INFO: Helper process launched with PID 11140 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 347.215 ; gain = 137.773
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 356.426 ; gain = 147.000
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-1565] actual for formal port rst is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:225]
-WARNING: [Synth 8-1565] actual for formal port s1_clkout0 is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:227]
-WARNING: [Synth 8-1565] actual for formal port s1_clkfbout is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:228]
-WARNING: [Synth 8-1565] actual for formal port s1_lock is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:230]
-WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:128]
-WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:158]
-WARNING: [Synth 8-1565] actual for formal port potherchrdy is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:179]
-WARNING: [Synth 8-1565] actual for formal port potherchvld is neither a static name nor a globally static expression [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:180]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_wrapper' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:58]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'ddc_scl_iobuf' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:149]
+WARNING: [Synth 8-1565] actual for formal port rst is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:225]
+WARNING: [Synth 8-1565] actual for formal port s1_clkout0 is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:227]
+WARNING: [Synth 8-1565] actual for formal port s1_clkfbout is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:228]
+WARNING: [Synth 8-1565] actual for formal port s1_lock is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:230]
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:128]
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:158]
+WARNING: [Synth 8-1565] actual for formal port potherchrdy is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:179]
+WARNING: [Synth 8-1565] actual for formal port potherchvld is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_wrapper' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:58]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'ddc_scl_iobuf' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:149]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'ddc_sda_iobuf' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:156]
-INFO: [Synth 8-3491] module 'hdmi_in' declared at 'C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4601' bound to instance 'hdmi_in_i' of component 'hdmi_in' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4659]
-INFO: [Synth 8-3491] module 'hdmi_in_axi_dynclk_0_0' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:56' bound to instance 'axi_dynclk_0' of component 'hdmi_in_axi_dynclk_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5618]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_axi_dynclk_0_0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:86]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'ddc_sda_iobuf' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:156]
+INFO: [Synth 8-3491] module 'hdmi_in' declared at 'C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4601' bound to instance 'hdmi_in_i' of component 'hdmi_in' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4659]
+INFO: [Synth 8-3491] module 'hdmi_in_axi_dynclk_0_0' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:56' bound to instance 'axi_dynclk_0' of component 'hdmi_in_axi_dynclk_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5618]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_axi_dynclk_0_0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:86]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter ADD_BUFMR bound to: 0 - type: bool 
-INFO: [Synth 8-3491] module 'axi_dynclk' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:10' bound to instance 'U0' of component 'axi_dynclk' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'axi_dynclk' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:57]
+INFO: [Synth 8-3491] module 'axi_dynclk' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:10' bound to instance 'U0' of component 'axi_dynclk' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_dynclk' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:57]
 	Parameter ADD_BUFMR bound to: 0 - type: bool 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'axi_dynclk_S00_AXI' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:5' bound to instance 'axi_dynclk_S00_AXI_inst' of component 'axi_dynclk_S00_AXI' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:147]
-INFO: [Synth 8-638] synthesizing module 'axi_dynclk_S00_AXI' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:93]
+INFO: [Synth 8-3491] module 'axi_dynclk_S00_AXI' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:5' bound to instance 'axi_dynclk_S00_AXI_inst' of component 'axi_dynclk_S00_AXI' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'axi_dynclk_S00_AXI' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:93]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:399]
-INFO: [Synth 8-256] done synthesizing module 'axi_dynclk_S00_AXI' (2#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:93]
-INFO: [Synth 8-113] binding component instance 'BUFIO_inst' to cell 'BUFIO' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:198]
+INFO: [Synth 8-226] default block is never used [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:399]
+INFO: [Synth 8-256] done synthesizing module 'axi_dynclk_S00_AXI' (2#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk_S00_AXI.vhd:93]
+INFO: [Synth 8-113] binding component instance 'BUFIO_inst' to cell 'BUFIO' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:198]
 	Parameter BUFR_DIVIDE bound to: 5 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'BUFR_inst' to cell 'BUFR' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:204]
+INFO: [Synth 8-113] binding component instance 'BUFR_inst' to cell 'BUFR' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:204]
 	Parameter DIV_F bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'mmcme2_drp' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/mmcme2_drp.v:50' bound to instance 'Inst_mmcme2_drp' of component 'mmcme2_drp' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:218]
-INFO: [Synth 8-638] synthesizing module 'mmcme2_drp' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/mmcme2_drp.v:50]
+INFO: [Synth 8-3491] module 'mmcme2_drp' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/mmcme2_drp.v:50' bound to instance 'Inst_mmcme2_drp' of component 'mmcme2_drp' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'mmcme2_drp' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/mmcme2_drp.v:50]
 	Parameter DIV_F bound to: 2 - type: integer 
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter RESTART bound to: 4'b0001 
@@ -141,32 +142,32 @@ INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.3/sc
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20414]
-INFO: [Synth 8-256] done synthesizing module 'mmcme2_drp' (4#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/mmcme2_drp.v:50]
-INFO: [Synth 8-256] done synthesizing module 'axi_dynclk' (5#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_axi_dynclk_0_0' (6#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:86]
-INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_btn' of component 'hdmi_in_axi_gpio_btn_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5646]
-INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_led' of component 'hdmi_in_axi_gpio_led_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5669]
-INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_sw' of component 'hdmi_in_axi_gpio_sw_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5694]
-INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_video' of component 'hdmi_in_axi_gpio_video_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5717]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_axi_mem_intercon_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2645]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_KM5YEW' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:201]
-INFO: [Synth 8-637] synthesizing blackbox instance 'auto_pc' of component 'hdmi_in_auto_pc_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:691]
-INFO: [Synth 8-637] synthesizing blackbox instance 'm00_data_fifo' of component 'hdmi_in_m00_data_fifo_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:773]
-INFO: [Synth 8-637] synthesizing blackbox instance 'm00_regslice' of component 'hdmi_in_m00_regslice_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:856]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_KM5YEW' (7#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:201]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1L07FMS' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2013]
-INFO: [Synth 8-637] synthesizing blackbox instance 'auto_us_df' of component 'hdmi_in_auto_us_df_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2199]
-INFO: [Synth 8-637] synthesizing blackbox instance 's00_regslice' of component 'hdmi_in_s00_regslice_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2242]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1L07FMS' (8#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2013]
-INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_KRH6EF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2327]
-INFO: [Synth 8-637] synthesizing blackbox instance 'auto_us_df' of component 'hdmi_in_auto_us_df_1' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2486]
-INFO: [Synth 8-637] synthesizing blackbox instance 's01_regslice' of component 'hdmi_in_s01_regslice_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2523]
-INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_KRH6EF' (9#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2327]
-INFO: [Synth 8-637] synthesizing blackbox instance 'xbar' of component 'hdmi_in_xbar_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3122]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_axi_mem_intercon_0' (10#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2645]
-INFO: [Synth 8-637] synthesizing blackbox instance 'axi_vdma_0' of component 'hdmi_in_axi_vdma_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5820]
-INFO: [Synth 8-3491] module 'hdmi_in_dvi2rgb_0_0' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:56' bound to instance 'dvi2rgb_0' of component 'hdmi_in_dvi2rgb_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5890]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_dvi2rgb_0_0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'mmcme2_drp' (4#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/mmcme2_drp.v:50]
+INFO: [Synth 8-256] done synthesizing module 'axi_dynclk' (5#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_axi_dynclk_0_0' (6#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_dynclk_0_0/synth/hdmi_in_axi_dynclk_0_0.vhd:86]
+INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_btn' of component 'hdmi_in_axi_gpio_btn_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5646]
+INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_led' of component 'hdmi_in_axi_gpio_led_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5669]
+INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_sw' of component 'hdmi_in_axi_gpio_sw_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5694]
+INFO: [Synth 8-637] synthesizing blackbox instance 'axi_gpio_video' of component 'hdmi_in_axi_gpio_video_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5717]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_axi_mem_intercon_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2645]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_KM5YEW' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:201]
+INFO: [Synth 8-637] synthesizing blackbox instance 'auto_pc' of component 'hdmi_in_auto_pc_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:691]
+INFO: [Synth 8-637] synthesizing blackbox instance 'm00_data_fifo' of component 'hdmi_in_m00_data_fifo_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:773]
+INFO: [Synth 8-637] synthesizing blackbox instance 'm00_regslice' of component 'hdmi_in_m00_regslice_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:856]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_KM5YEW' (7#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:201]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1L07FMS' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2013]
+INFO: [Synth 8-637] synthesizing blackbox instance 'auto_us_df' of component 'hdmi_in_auto_us_df_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2199]
+INFO: [Synth 8-637] synthesizing blackbox instance 's00_regslice' of component 'hdmi_in_s00_regslice_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2242]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1L07FMS' (8#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2013]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_KRH6EF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2327]
+INFO: [Synth 8-637] synthesizing blackbox instance 'auto_us_df' of component 'hdmi_in_auto_us_df_1' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2486]
+INFO: [Synth 8-637] synthesizing blackbox instance 's01_regslice' of component 'hdmi_in_s01_regslice_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2523]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_KRH6EF' (9#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2327]
+INFO: [Synth 8-637] synthesizing blackbox instance 'xbar' of component 'hdmi_in_xbar_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3122]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_axi_mem_intercon_0' (10#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2645]
+INFO: [Synth 8-637] synthesizing blackbox instance 'axi_vdma_0' of component 'hdmi_in_axi_vdma_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5820]
+INFO: [Synth 8-3491] module 'hdmi_in_dvi2rgb_0_0' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:56' bound to instance 'dvi2rgb_0' of component 'hdmi_in_dvi2rgb_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5890]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_dvi2rgb_0_0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:80]
 	Parameter kEmulateDDC bound to: 1 - type: bool 
 	Parameter kRstActiveHigh bound to: 0 - type: bool 
 	Parameter kClkRange bound to: 2 - type: integer 
@@ -174,8 +175,8 @@ INFO: [Synth 8-638] synthesizing module 'hdmi_in_dvi2rgb_0_0' [c:/Projects/jan20
 	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
 	Parameter kAddBUFG bound to: 0 - type: bool 
 	Parameter kEdidFileName bound to: 720p_edid.txt - type: string 
-INFO: [Synth 8-3491] module 'dvi2rgb' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:110]
+INFO: [Synth 8-3491] module 'dvi2rgb' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:110]
 	Parameter kEmulateDDC bound to: 1 - type: bool 
 	Parameter kRstActiveHigh bound to: 0 - type: bool 
 	Parameter kAddBUFG bound to: 0 - type: bool 
@@ -183,19 +184,19 @@ INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [c:/Projects/jan2017/VivadoPro
 	Parameter kEdidFileName bound to: 720p_edid.txt - type: string 
 	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
 	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:75]
 	Parameter kClkRange bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsyncReset.vhd:72]
 	Parameter kPolarity bound to: 1'b1 
-INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsyncReset.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
 	Parameter kResetTo bound to: 1'b1 
 	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:73]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (11#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (12#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (11#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (12#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsyncReset.vhd:72]
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:118]
+INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:118]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: 0 - type: bool 
 	Parameter DQS_BIAS bound to: FALSE - type: string 
@@ -203,7 +204,7 @@ INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
-INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:132]
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:132]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
@@ -252,23 +253,23 @@ INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:173]
-INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:232]
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:173]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:232]
 	Parameter BUFR_DIVIDE bound to: 5 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:238]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
 	Parameter kResetTo bound to: 1'b0 
 	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (12#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (13#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Decoder.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (12#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (13#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Clocking.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Decoder.vhd:96]
 	Parameter kCtlTknCount bound to: 128 - type: integer 
 	Parameter kTimeoutMs bound to: 50 - type: integer 
 	Parameter kRefClkFrqMHz bound to: 200 - type: integer 
 	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
 	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'InputSERDES' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'InputSERDES' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:85]
 	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
 	Parameter kParallelWidth bound to: 10 - type: integer 
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
@@ -278,7 +279,7 @@ INFO: [Synth 8-638] synthesizing module 'InputSERDES' [c:/Projects/jan2017/Vivad
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
-INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:92]
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:92]
 	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
 	Parameter DELAY_SRC bound to: IDATAIN - type: string 
 	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
@@ -290,7 +291,7 @@ INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c
 	Parameter PIPE_SEL bound to: FALSE - type: string 
 	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
 	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
-INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:102]
+INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:102]
 	Parameter DATA_RATE bound to: DDR - type: string 
 	Parameter DATA_WIDTH bound to: 10 - type: integer 
 	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
@@ -315,7 +316,7 @@ INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [
 	Parameter SRVAL_Q2 bound to: 1'b0 
 	Parameter SRVAL_Q3 bound to: 1'b0 
 	Parameter SRVAL_Q4 bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:130]
+INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:130]
 	Parameter DATA_RATE bound to: DDR - type: string 
 	Parameter DATA_WIDTH bound to: 10 - type: integer 
 	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
@@ -340,94 +341,94 @@ INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISE
 	Parameter SRVAL_Q2 bound to: 1'b0 
 	Parameter SRVAL_Q3 bound to: 1'b0 
 	Parameter SRVAL_Q4 bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:172]
-INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (14#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
+INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (14#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
 	Parameter kResetTo bound to: 1'b0 
 	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
 	Parameter kResetTo bound to: 1'b0 
 	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (14#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'SyncBase' (15#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (14#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (15#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
 	Parameter kResetTo bound to: 1'b1 
 	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (15#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (15#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/PhaseAlign.vhd:95]
 	Parameter kUseFastAlgorithm bound to: 0 - type: bool 
 	Parameter kCtlTknCount bound to: 128 - type: integer 
 	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
 	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-WARNING: [Synth 8-614] signal 'pEyeOpenCnt' is read in the process but is not in the sensitivity list [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/PhaseAlign.vhd:318]
-INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (16#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/PhaseAlign.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'ChannelBond' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/ChannelBond.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (17#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/ChannelBond.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (18#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Decoder.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/EEPROM_8b.vhd:85]
+WARNING: [Synth 8-614] signal 'pEyeOpenCnt' is read in the process but is not in the sensitivity list [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/PhaseAlign.vhd:318]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (16#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ChannelBond' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (17#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (18#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TMDS_Decoder.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/EEPROM_8b.vhd:85]
 	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
 	Parameter kSlaveAddress bound to: 7'b1010000 
 	Parameter kAddrBits bound to: 7 - type: integer 
 	Parameter kWritable bound to: 0 - type: bool 
 	Parameter kInitFileName bound to: 720p_edid.txt - type: string 
-INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd:87]
 	Parameter SLAVE_ADDRESS bound to: 8'b10100000 
 	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/GlitchFilter.vhd:69]
 	Parameter kNoOfPeriodsToFilter bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (19#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/GlitchFilter.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (20#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd:87]
-INFO: [Synth 8-226] default block is never used [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/EEPROM_8b.vhd:201]
-INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (21#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/EEPROM_8b.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (22#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:110]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_dvi2rgb_0_0' (23#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:80]
-INFO: [Synth 8-637] synthesizing blackbox instance 'proc_sys_reset_0' of component 'hdmi_in_proc_sys_reset_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5912]
-INFO: [Synth 8-637] synthesizing blackbox instance 'processing_system7_0' of component 'hdmi_in_processing_system7_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5925]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_processing_system7_0_axi_periph_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3441]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_CYQ0EC' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_CYQ0EC' (24#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1AXBFT3' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:985]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1AXBFT3' (25#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:985]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1XIDCG3' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1086]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1XIDCG3' (26#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1086]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YPZJ7K' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1187]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YPZJ7K' (27#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1187]
-INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_PZVU4R' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1292]
-INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_PZVU4R' (28#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1292]
-INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1OIGGLK' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1397]
-INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1OIGGLK' (29#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1397]
-INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_125YM4S' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1495]
-INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_125YM4S' (30#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1495]
-INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_3XK05R' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1596]
-INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_3XK05R' (31#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1596]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1B1CMQG' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1720]
-INFO: [Synth 8-637] synthesizing blackbox instance 'auto_pc' of component 'hdmi_in_auto_pc_1' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1903]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1B1CMQG' (32#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1720]
-INFO: [Synth 8-637] synthesizing blackbox instance 'xbar' of component 'hdmi_in_xbar_1' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4430]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_processing_system7_0_axi_periph_0' (33#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3441]
-INFO: [Synth 8-3491] module 'hdmi_in_rgb2vga_0_0' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:56' bound to instance 'rgb2vga_0' of component 'hdmi_in_rgb2vga_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6252]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_rgb2vga_0_0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (19#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (20#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/EEPROM_8b.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (21#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (22#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/dvi2rgb_v1_6/src/dvi2rgb.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_dvi2rgb_0_0' (23#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/synth/hdmi_in_dvi2rgb_0_0.vhd:80]
+INFO: [Synth 8-637] synthesizing blackbox instance 'proc_sys_reset_0' of component 'hdmi_in_proc_sys_reset_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5912]
+INFO: [Synth 8-637] synthesizing blackbox instance 'processing_system7_0' of component 'hdmi_in_processing_system7_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5925]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_processing_system7_0_axi_periph_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3441]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_CYQ0EC' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_CYQ0EC' (24#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1AXBFT3' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:985]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1AXBFT3' (25#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:985]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1XIDCG3' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1086]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1XIDCG3' (26#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1086]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_YPZJ7K' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1187]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_YPZJ7K' (27#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1187]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_PZVU4R' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1292]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_PZVU4R' (28#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1292]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1OIGGLK' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1397]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1OIGGLK' (29#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1397]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_125YM4S' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1495]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_125YM4S' (30#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1495]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_3XK05R' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1596]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_3XK05R' (31#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1596]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1B1CMQG' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1720]
+INFO: [Synth 8-637] synthesizing blackbox instance 'auto_pc' of component 'hdmi_in_auto_pc_1' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1903]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1B1CMQG' (32#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1720]
+INFO: [Synth 8-637] synthesizing blackbox instance 'xbar' of component 'hdmi_in_xbar_1' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4430]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_processing_system7_0_axi_periph_0' (33#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3441]
+INFO: [Synth 8-3491] module 'hdmi_in_rgb2vga_0_0' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:56' bound to instance 'rgb2vga_0' of component 'hdmi_in_rgb2vga_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6252]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_rgb2vga_0_0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:71]
 	Parameter VID_IN_DATA_WIDTH bound to: 24 - type: integer 
 	Parameter kRedDepth bound to: 5 - type: integer 
 	Parameter kGreenDepth bound to: 6 - type: integer 
 	Parameter kBlueDepth bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'rgb2vga' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/rgb2vga_v1_0/src/rgb2vga.vhd:58' bound to instance 'U0' of component 'rgb2vga' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'rgb2vga' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/rgb2vga_v1_0/src/rgb2vga.vhd:81]
+INFO: [Synth 8-3491] module 'rgb2vga' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/rgb2vga_v1_0/src/rgb2vga.vhd:58' bound to instance 'U0' of component 'rgb2vga' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'rgb2vga' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/rgb2vga_v1_0/src/rgb2vga.vhd:81]
 	Parameter VID_IN_DATA_WIDTH bound to: 24 - type: integer 
 	Parameter kRedDepth bound to: 5 - type: integer 
 	Parameter kGreenDepth bound to: 6 - type: integer 
 	Parameter kBlueDepth bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rgb2vga' (34#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/rgb2vga_v1_0/src/rgb2vga.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_rgb2vga_0_0' (35#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:71]
-INFO: [Synth 8-637] synthesizing blackbox instance 'rst_processing_system7_0_100M' of component 'hdmi_in_rst_processing_system7_0_100M_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6265]
-INFO: [Synth 8-637] synthesizing blackbox instance 'rst_processing_system7_0_150M' of component 'hdmi_in_rst_processing_system7_0_150M_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6278]
-INFO: [Synth 8-637] synthesizing blackbox instance 'v_axi4s_vid_out_0' of component 'hdmi_in_v_axi4s_vid_out_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6291]
-INFO: [Synth 8-637] synthesizing blackbox instance 'v_tc_0' of component 'hdmi_in_v_tc_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6322]
-INFO: [Synth 8-637] synthesizing blackbox instance 'v_tc_1' of component 'hdmi_in_v_tc_1_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6357]
-INFO: [Synth 8-637] synthesizing blackbox instance 'v_vid_in_axi4s_0' of component 'hdmi_in_v_vid_in_axi4s_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6389]
-INFO: [Synth 8-3491] module 'hdmi_in_xlconcat_0_0' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'hdmi_in_xlconcat_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6420]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_xlconcat_0_0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'rgb2vga' (34#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/rgb2vga_v1_0/src/rgb2vga.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_rgb2vga_0_0' (35#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_rgb2vga_0_0/synth/hdmi_in_rgb2vga_0_0.vhd:71]
+INFO: [Synth 8-637] synthesizing blackbox instance 'rst_processing_system7_0_100M' of component 'hdmi_in_rst_processing_system7_0_100M_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6265]
+INFO: [Synth 8-637] synthesizing blackbox instance 'rst_processing_system7_0_150M' of component 'hdmi_in_rst_processing_system7_0_150M_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6278]
+INFO: [Synth 8-637] synthesizing blackbox instance 'v_axi4s_vid_out_0' of component 'hdmi_in_v_axi4s_vid_out_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6291]
+INFO: [Synth 8-637] synthesizing blackbox instance 'v_tc_0' of component 'hdmi_in_v_tc_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6322]
+INFO: [Synth 8-637] synthesizing blackbox instance 'v_tc_1' of component 'hdmi_in_v_tc_1_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6357]
+INFO: [Synth 8-637] synthesizing blackbox instance 'v_vid_in_axi4s_0' of component 'hdmi_in_v_vid_in_axi4s_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6389]
+INFO: [Synth 8-3491] module 'hdmi_in_xlconcat_0_0' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:59' bound to instance 'xlconcat_0' of component 'hdmi_in_xlconcat_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6420]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_xlconcat_0_0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:70]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
 	Parameter IN2_WIDTH bound to: 1 - type: integer 
@@ -462,8 +463,8 @@ INFO: [Synth 8-638] synthesizing module 'hdmi_in_xlconcat_0_0' [c:/Projects/jan2
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 5 - type: integer 
 	Parameter NUM_PORTS bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'xlconcat' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:27' bound to instance 'U0' of component 'xlconcat' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:100]
+INFO: [Synth 8-3491] module 'xlconcat' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:27' bound to instance 'U0' of component 'xlconcat' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:100]
 	Parameter NUM_PORTS bound to: 5 - type: integer 
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
 	Parameter IN1_WIDTH bound to: 1 - type: integer 
@@ -498,26 +499,26 @@ INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/Projects/jan2017/VivadoPr
 	Parameter IN30_WIDTH bound to: 1 - type: integer 
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xlconcat' (36#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:100]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_xlconcat_0_0' (37#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:70]
-INFO: [Synth 8-3491] module 'hdmi_in_xlconstant_0_0' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:29' bound to instance 'xlconstant_0' of component 'hdmi_in_xlconstant_0_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6429]
-INFO: [Synth 8-638] synthesizing module 'hdmi_in_xlconstant_0_0' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (36#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_xlconcat_0_0' (37#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconcat_0_0/synth/hdmi_in_xlconcat_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'hdmi_in_xlconstant_0_0' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:29' bound to instance 'xlconstant_0' of component 'hdmi_in_xlconstant_0_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6429]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in_xlconstant_0_0' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:35]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'xlconstant' declared at 'c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'xlconstant' [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:36]
+INFO: [Synth 8-3491] module 'xlconstant' declared at 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:36]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xlconstant' (38#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_xlconstant_0_0' (39#1) [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in' (40#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4659]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:224]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:231]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_0' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:238]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_1' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:245]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_2' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:252]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_3' of component 'IOBUF' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:259]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_in_wrapper' (41#1) [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (38#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_xlconstant_0_0' (39#1) [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_xlconstant_0_0/sim/hdmi_in_xlconstant_0_0.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in' (40#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4659]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:224]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:231]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_0' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:238]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_1' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:245]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_2' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:252]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:17333' bound to instance 'leds_4bits_tri_iobuf_3' of component 'IOBUF' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_in_wrapper' (41#1) [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd:58]
 WARNING: [Synth 8-3331] design xlconcat has unconnected port In5[0]
 WARNING: [Synth 8-3331] design xlconcat has unconnected port In6[0]
 WARNING: [Synth 8-3331] design xlconcat has unconnected port In7[0]
@@ -602,7 +603,7 @@ WARNING: [Synth 8-3331] design axi_dynclk_S00_AXI has unconnected port S_AXI_ARP
 WARNING: [Synth 8-3331] design axi_dynclk_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design axi_dynclk_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 398.301 ; gain = 188.859
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 407.438 ; gain = 198.012
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -612,31 +613,31 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 398.301 ; gain = 188.859
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 407.438 ; gain = 198.012
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_pc_0' instantiated as 'hdmi_in_i/axi_mem_intercon/m00_couplers/auto_pc' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:691]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_pc_1' instantiated as 'hdmi_in_i/processing_system7_0_axi_periph/s00_couplers/auto_pc' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1903]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_us_df_0' instantiated as 'hdmi_in_i/axi_mem_intercon/s00_couplers/auto_us_df' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2199]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_us_df_1' instantiated as 'hdmi_in_i/axi_mem_intercon/s01_couplers/auto_us_df' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2486]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_btn_0' instantiated as 'hdmi_in_i/axi_gpio_btn' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5646]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_led_0' instantiated as 'hdmi_in_i/axi_gpio_led' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5669]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_sw_0' instantiated as 'hdmi_in_i/axi_gpio_sw' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5694]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_video_0' instantiated as 'hdmi_in_i/axi_gpio_video' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5717]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_vdma_0_0' instantiated as 'hdmi_in_i/axi_vdma_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5820]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_m00_data_fifo_0' instantiated as 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_data_fifo' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:773]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_m00_regslice_0' instantiated as 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_regslice' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:856]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_proc_sys_reset_0_0' instantiated as 'hdmi_in_i/proc_sys_reset_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5912]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_processing_system7_0_0' instantiated as 'hdmi_in_i/processing_system7_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5925]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_rst_processing_system7_0_100M_0' instantiated as 'hdmi_in_i/rst_processing_system7_0_100M' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6265]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_rst_processing_system7_0_150M_0' instantiated as 'hdmi_in_i/rst_processing_system7_0_150M' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6278]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_s00_regslice_0' instantiated as 'hdmi_in_i/axi_mem_intercon/s00_couplers/s00_regslice' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2242]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_s01_regslice_0' instantiated as 'hdmi_in_i/axi_mem_intercon/s01_couplers/s01_regslice' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2523]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_axi4s_vid_out_0_0' instantiated as 'hdmi_in_i/v_axi4s_vid_out_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6291]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_tc_0_0' instantiated as 'hdmi_in_i/v_tc_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6322]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_tc_1_0' instantiated as 'hdmi_in_i/v_tc_1' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6357]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_vid_in_axi4s_0_0' instantiated as 'hdmi_in_i/v_vid_in_axi4s_0' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6389]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_xbar_0' instantiated as 'hdmi_in_i/axi_mem_intercon/xbar' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3122]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_xbar_1' instantiated as 'hdmi_in_i/processing_system7_0_axi_periph/xbar' [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4430]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_pc_0' instantiated as 'hdmi_in_i/axi_mem_intercon/m00_couplers/auto_pc' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:691]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_pc_1' instantiated as 'hdmi_in_i/processing_system7_0_axi_periph/s00_couplers/auto_pc' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:1903]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_us_df_0' instantiated as 'hdmi_in_i/axi_mem_intercon/s00_couplers/auto_us_df' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2199]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_auto_us_df_1' instantiated as 'hdmi_in_i/axi_mem_intercon/s01_couplers/auto_us_df' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2486]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_btn_0' instantiated as 'hdmi_in_i/axi_gpio_btn' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5646]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_led_0' instantiated as 'hdmi_in_i/axi_gpio_led' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5669]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_sw_0' instantiated as 'hdmi_in_i/axi_gpio_sw' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5694]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_gpio_video_0' instantiated as 'hdmi_in_i/axi_gpio_video' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5717]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_axi_vdma_0_0' instantiated as 'hdmi_in_i/axi_vdma_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5820]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_m00_data_fifo_0' instantiated as 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_data_fifo' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:773]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_m00_regslice_0' instantiated as 'hdmi_in_i/axi_mem_intercon/m00_couplers/m00_regslice' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:856]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_proc_sys_reset_0_0' instantiated as 'hdmi_in_i/proc_sys_reset_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5912]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_processing_system7_0_0' instantiated as 'hdmi_in_i/processing_system7_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:5925]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_rst_processing_system7_0_100M_0' instantiated as 'hdmi_in_i/rst_processing_system7_0_100M' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6265]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_rst_processing_system7_0_150M_0' instantiated as 'hdmi_in_i/rst_processing_system7_0_150M' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6278]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_s00_regslice_0' instantiated as 'hdmi_in_i/axi_mem_intercon/s00_couplers/s00_regslice' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2242]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_s01_regslice_0' instantiated as 'hdmi_in_i/axi_mem_intercon/s01_couplers/s01_regslice' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:2523]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_axi4s_vid_out_0_0' instantiated as 'hdmi_in_i/v_axi4s_vid_out_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6291]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_tc_0_0' instantiated as 'hdmi_in_i/v_tc_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6322]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_tc_1_0' instantiated as 'hdmi_in_i/v_tc_1' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6357]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_v_vid_in_axi4s_0_0' instantiated as 'hdmi_in_i/v_vid_in_axi4s_0' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:6389]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_xbar_0' instantiated as 'hdmi_in_i/axi_mem_intercon/xbar' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:3122]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'hdmi_in_xbar_1' instantiated as 'hdmi_in_i/processing_system7_0_axi_periph/xbar' [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd:4430]
 INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z010clg400-1
@@ -644,21 +645,43 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
-Finished Parsing XDC File [c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
-Parsing XDC File [C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc:8]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc:9]
-Finished Parsing XDC File [C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_in_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==hdmi_in_s00_data_fifo_0 || ORIG_REF_NAME==hdmi_in_s00_data_fifo_0}'. [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc:76]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==hdmi_in_s01_data_fifo_0 || ORIG_REF_NAME==hdmi_in_s01_data_fifo_0}'. [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc:82]
-Finished Parsing XDC File [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
+Finished Parsing XDC File [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc] for cell 'hdmi_in_i/dvi2rgb_0/U0'
+Parsing XDC File [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[0]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[0]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc:121]
+Finished Parsing XDC File [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==hdmi_in_s00_data_fifo_0 || ORIG_REF_NAME==hdmi_in_s00_data_fifo_0}'. [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc:76]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==hdmi_in_s01_data_fifo_0 || ORIG_REF_NAME==hdmi_in_s01_data_fifo_0}'. [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc:82]
+Finished Parsing XDC File [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_in_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
@@ -667,21 +690,21 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 707.574 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 716.285 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for hdmi_in_i/dvi2rgb_0/U0. (constraint file  C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc, line 94).
+Applied set_property DONT_TOUCH = true for hdmi_in_i/dvi2rgb_0/U0. (constraint file  C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/dont_touch.xdc, line 94).
 Applied set_property DONT_TOUCH = true for hdmi_in_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_in_i/axi_dynclk_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_in_i/axi_gpio_btn. (constraint file  auto generated constraint, line ).
@@ -710,7 +733,7 @@ Applied set_property DONT_TOUCH = true for hdmi_in_i/v_vid_in_axi4s_0. (constrai
 Applied set_property DONT_TOUCH = true for hdmi_in_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_in_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "STAT_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "pCtlTknRst" won't be mapped to RAM because it is too sparse
@@ -737,7 +760,7 @@ INFO: [Synth 8-5544] ROM "shiftBitOut" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "eeprom" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:01:11 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1025,7 +1048,7 @@ WARNING: [Synth 8-3332] Sequential element (pDataQ_reg[9]) is unused and will be
 WARNING: [Synth 8-3332] Sequential element (pDataQ_reg[9]) is unused and will be removed from module PhaseAlign__4.
 WARNING: [Synth 8-3332] Sequential element (pDataQ_reg[9]) is unused and will be removed from module PhaseAlign.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:22 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1054,7 +1077,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:44 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1081,7 +1104,7 @@ INFO: [Synth 8-3886] merging instance 'hdmi_in_i/dvi2rgb_0/U0/DataDecoders[2].De
 INFO: [Synth 8-3886] merging instance 'hdmi_in_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[3]' (FDRE) to 'hdmi_in_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[3]'
 INFO: [Synth 8-3886] merging instance 'hdmi_in_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[4]' (FDRE) to 'hdmi_in_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[4]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:48 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1099,7 +1122,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1112,7 +1135,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:51 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1124,7 +1147,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:51 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1274,11 +1297,11 @@ Report Instance Areas:
 |56    |    xlconstant_0                    |hdmi_in_xlconstant_0_0                    |     0|
 +------+------------------------------------+------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 707.574 ; gain = 498.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:51 . Memory (MB): peak = 716.285 ; gain = 506.859
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 707.574 ; gain = 119.840
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 707.574 ; gain = 498.133
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:10 . Memory (MB): peak = 716.285 ; gain = 126.184
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:51 . Memory (MB): peak = 716.285 ; gain = 506.859
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1290,9 +1313,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-219 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+219 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 707.574 ; gain = 440.930
-INFO: [Common 17-1381] The checkpoint 'C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 707.574 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 04 13:07:14 2017...
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:35 . Memory (MB): peak = 716.285 ; gain = 438.996
+INFO: [Common 17-1381] The checkpoint 'C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 716.285 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 04 14:00:56 2017...

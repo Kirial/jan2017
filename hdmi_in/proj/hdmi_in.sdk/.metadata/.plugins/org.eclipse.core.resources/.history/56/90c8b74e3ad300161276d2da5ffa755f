@@ -1,0 +1,14 @@
+/*
+ * video_demo.c
+ *
+ *  Created on: 05/01/2017
+ *      Author: taras
+ */
+
+#include <stdio.h>
+
+int main(){
+	printf("hello world");
+	return 0;
+
+}

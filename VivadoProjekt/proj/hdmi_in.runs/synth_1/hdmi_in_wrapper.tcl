@@ -11,26 +11,29 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.cache/wt [current_project]
-set_property parent.project_path C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.cache/wt [current_project]
+set_property parent.project_path C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Projects/jan2017/VivadoProjekt/repo [current_project]
+set_property ip_repo_paths {
+  c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0
+  c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/repo
+} [current_project]
 set_property ip_cache_permissions disable [current_project]
-read_vhdl -library xil_defaultlib C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd
-add_files C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd
-set_property used_in_implementation false [get_files -all c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc]
-set_property used_in_implementation false [get_files -all c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in_ooc.xdc]
-set_property is_locked true [get_files C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd]
+read_vhdl -library xil_defaultlib C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd
+add_files C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd
+set_property used_in_implementation false [get_files -all c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in_ooc.xdc]
+set_property is_locked true [get_files C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd]
 
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc]
+read_xdc C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

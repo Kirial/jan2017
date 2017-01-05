@@ -54,15 +54,18 @@ set rc [catch {
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.cache/wt [current_project]
-  set_property parent.project_path C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.xpr [current_project]
-  set_property ip_repo_paths C:/Projects/jan2017/VivadoProjekt/repo [current_project]
+  set_property webtalk.parent_dir C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.cache/wt [current_project]
+  set_property parent.project_path C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.xpr [current_project]
+  set_property ip_repo_paths {
+  C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0
+  C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/repo
+} [current_project]
   set_property ip_cache_permissions disable [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.dcp
-  read_xdc -ref hdmi_in_dvi2rgb_0_0 -cells U0 c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc
-  set_property processing_order EARLY [get_files c:/Projects/jan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc]
-  read_xdc C:/Users/jespe/Downloads/ZYBO-master/ZYBO-master/Resources/XDC/ZYBO_Master.xdc
+  add_files -quiet C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.dcp
+  read_xdc -ref hdmi_in_dvi2rgb_0_0 -cells U0 c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc
+  set_property processing_order EARLY [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/VivadoProjekt/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_dvi2rgb_0_0/src/dvi2rgb.xdc]
+  read_xdc C:/Users/taras/Downloads/ZYBO-master/ZYBO-master/Projects/XADC/src/constraints/ZYBO_Master.xdc
   link_design -top hdmi_in_wrapper -part xc7z010clg400-1
   write_hwdef -file hdmi_in_wrapper.hwdef
   close_msg_db -file init_design.pb

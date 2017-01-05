@@ -1,0 +1,6 @@
+16:53:29 **** Incremental Build of configuration Default for project HDMI_IN ****
+make all 
+make: *** Ingen regel til at skabe mål 'all'. Stop.
+
+16:53:29 Build Finished (took 173ms)
+
