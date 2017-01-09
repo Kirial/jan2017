@@ -42,6 +42,7 @@
 /*
  * XPAR redefines
  */
+
 #define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
 #define VGA_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
 #define DISP_VTC_ID XPAR_VTC_0_DEVICE_ID
@@ -51,6 +52,12 @@
 #define VID_GPIO_IRPT_ID XPS_FPGA4_INT_ID
 #define SCU_TIMER_ID XPAR_SCUTIMER_DEVICE_ID
 #define UART_BASEADDR XPAR_PS7_UART_1_BASEADDR
+
+/* ------------------------------------------------------------ */
+/*				Wood Wood Project								*/
+/* ------------------------------------------------------------ */
+
+#include "v2/meta.h"
 
 /* ------------------------------------------------------------ */
 /*				Global Variables								*/
@@ -85,9 +92,14 @@ const ivt_t ivt[] = {
 
 int main(void)
 {
+
+	setup(); // Wood Wood Project
+
 	DemoInitialize();
 
 	DemoRun();
+
+	loop();  // Wood Wood Project
 
 	return 0;
 }
@@ -648,5 +660,3 @@ void DemoISR(void *callBackRef, void *pVideo)
 	char *data = (char *) callBackRef;
 	*data = 1; //set fRefresh to 1
 }
-
-
