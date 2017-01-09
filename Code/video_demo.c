@@ -53,6 +53,12 @@
 #define UART_BASEADDR XPAR_PS7_UART_1_BASEADDR
 
 /* ------------------------------------------------------------ */
+/*				Wood Wood Project								*/
+/* ------------------------------------------------------------ */
+
+#include "v2/meta.h"
+
+/* ------------------------------------------------------------ */
 /*				Global Variables								*/
 /* ------------------------------------------------------------ */
 
@@ -85,9 +91,14 @@ const ivt_t ivt[] = {
 
 int main(void)
 {
+
+	setup(); // Wood Wood Project
+
 	DemoInitialize();
 
 	DemoRun();
+
+	loop();  // Wood Wood Project
 
 	return 0;
 }
