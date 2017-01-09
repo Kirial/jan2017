@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/taras/Desktop/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/synth_1'
+HD_PWD='C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/hdmi_in/proj/hdmi_in.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

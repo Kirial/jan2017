@@ -63,7 +63,9 @@ ENTITY hdmi_in_xlconcat_0_0 IS
     In2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     In3 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     In4 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    dout : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
+    In5 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    In6 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    dout : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
   );
 END hdmi_in_xlconcat_0_0;
 
@@ -140,7 +142,7 @@ ARCHITECTURE hdmi_in_xlconcat_0_0_arch OF hdmi_in_xlconcat_0_0 IS
       In29 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       In30 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       In31 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      dout : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
+      dout : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
     );
   END COMPONENT xlconcat;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -149,7 +151,7 @@ ARCHITECTURE hdmi_in_xlconcat_0_0_arch OF hdmi_in_xlconcat_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE OF hdmi_in_xlconcat_0_0_arch : ARCHITECTURE IS "hdmi_in_xlconcat_0_0,xlconcat,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
   ATTRIBUTE CORE_GENERATION_INFO OF hdmi_in_xlconcat_0_0_arch: ARCHITECTURE IS "hdmi_in_xlconcat_0_0,xlconcat,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconcat,x_ipVersion=2.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,IN0_WIDTH=1,IN1_WIDTH=1,IN2_WIDTH=1,IN3_WIDTH=1,IN4_WIDTH=1,IN5_WIDTH=1,IN6_WIDTH=1,IN7_WIDTH=1,IN8_WIDTH=1,IN9_WIDTH=1,IN10_WIDTH=1,IN11_WIDTH=1,IN12_WIDTH=1,IN13_WIDTH=1,IN14_WIDTH=1,IN15_WIDTH=1,IN16_WIDTH=1,IN17_WIDTH=1,IN18_WIDTH=1,IN19_WIDTH=1,IN20_WIDTH=1,IN21_WIDTH=1,IN22_WIDTH=1,IN23_WIDTH=1,IN24_WIDTH=" & 
-"1,IN25_WIDTH=1,IN26_WIDTH=1,IN27_WIDTH=1,IN28_WIDTH=1,IN29_WIDTH=1,IN30_WIDTH=1,IN31_WIDTH=1,dout_width=5,NUM_PORTS=5}";
+"1,IN25_WIDTH=1,IN26_WIDTH=1,IN27_WIDTH=1,IN28_WIDTH=1,IN29_WIDTH=1,IN30_WIDTH=1,IN31_WIDTH=1,dout_width=7,NUM_PORTS=7}";
 BEGIN
   U0 : xlconcat
     GENERIC MAP (
@@ -185,8 +187,8 @@ BEGIN
       IN29_WIDTH => 1,
       IN30_WIDTH => 1,
       IN31_WIDTH => 1,
-      dout_width => 5,
-      NUM_PORTS => 5
+      dout_width => 7,
+      NUM_PORTS => 7
     )
     PORT MAP (
       In0 => In0,
@@ -194,8 +196,8 @@ BEGIN
       In2 => In2,
       In3 => In3,
       In4 => In4,
-      In5 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
-      In6 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
+      In5 => In5,
+      In6 => In6,
       In7 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       In8 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       In9 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),

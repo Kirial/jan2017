@@ -144,3 +144,5 @@ dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
 // [GUI Memory]: 97 MB (+832kb) [00:20:26]
 // Elapsed time: 793 seconds
 selectCodeEditor("hdmi_in_wrapper.vhd", 336, 208); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 701 MB. GUI used memory: 51 MB. Current time: 1/5/17 2:03:18 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 701 MB. GUI used memory: 50 MB. Current time: 1/5/17 2:33:19 PM CET

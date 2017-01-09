@@ -264,6 +264,7 @@ void DemoRun()
 		case 'q':
 			break;
 		case 'r':
+			DemoPrintTest(pFrames[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_2);
 			break;
 		default :
 			xil_printf("\n\rInvalid Selection");
@@ -305,11 +306,13 @@ void DemoPrintMenu()
 
 void DemoChangeRes()
 {
+
+	/*
 	int fResSet = 0;
 	int status;
 	char userInput = 0;
 
-	/* Flush UART FIFO */
+	// Flush UART FIFO
 	while (XUartPs_IsReceiveData(UART_BASEADDR))
 	{
 		XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
@@ -319,11 +322,11 @@ void DemoChangeRes()
 	{
 		DemoCRMenu();
 
-		/* Wait for data on UART */
+		// Wait for data on UART
 		while (!XUartPs_IsReceiveData(UART_BASEADDR))
 		{}
 
-		/* Store the first character in the UART recieve FIFO and echo it */
+		// Store the first character in the UART recieve FIFO and echo it
 		userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
 		xil_printf("%c", userInput);
 		status = XST_SUCCESS;
@@ -370,7 +373,7 @@ void DemoChangeRes()
 		{
 			xil_printf("\n\rWARNING: AXI VDMA Error detected and cleared\n\r");
 		}
-	}
+	}*/
 }
 
 void DemoCRMenu()
@@ -577,7 +580,7 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 		break;
 	case DEMO_PATTERN_1:
 
-		xInt = width / 7; //Seven intervals, each with width/7 pixels
+		xInt = width / 6; //Seven intervals, each with width/7 pixels
 		xInc = 256.0 / ((double) xInt); //256 color intensities per interval. Notice that overflow is handled for this pattern.
 
 		fColor = 0.0;
@@ -588,7 +591,7 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 			/*
 			 * Just draw white in the last partial interval (when width is not divisible by 7)
 			 */
-			if (wCurrentInt > 7)
+			if (wCurrentInt > 6)
 			{
 				wRed = 255;
 				wBlue = 255;
@@ -637,6 +640,53 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 		 * Flush the framebuffer memory range to ensure changes are written to the
 		 * actual memory, and therefore accessible by the VDMA.
 		 */
+		Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	case DEMO_PATTERN_2:
+
+
+				xInt = width; //Seven intervals, each with width/7 pixels
+				xInc = 256.0 / ((double) xInt); //256 color intensities per interval. Notice that overflow is handled for this pattern.
+
+				fColor = 0.0;
+				wCurrentInt = 1;
+				for(xcoi = (width*3/2-15); xcoi < (width*3/2+15); xcoi+=3)
+				{
+
+					/*
+					 * Just draw white in the last partial interval (when width is not divisible by 7)
+					 */
+
+						wRed = 13;
+						wBlue = 224;
+						wGreen =255;
+
+
+					iPixelAddr = xcoi;
+
+					for(ycoi = 0; ycoi < height; ycoi++)
+					{
+
+						if(ycoi > (height/2-5) && ycoi < (height/2+5)) {
+							frame[iPixelAddr] = wRed;
+							frame[iPixelAddr + 1] = wBlue;
+							frame[iPixelAddr + 2] = wGreen;
+						}
+						/*
+						 * This pattern is printed one vertical line at a time, so the address must be incremented
+						 * by the stride instead of just 1.
+						 */
+						iPixelAddr += stride;
+					}
+
+					fColor += xInc;
+					if (fColor >= 256.0)
+					{
+						fColor = 0.0;
+						wCurrentInt++;
+					}
+				}
+
 		Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
 		break;
 	default :
