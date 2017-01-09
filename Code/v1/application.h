@@ -7,10 +7,14 @@ int appMode;
 
 // starting
 
-char* loadingAppStr = "Loading...\n";
-char* readyAppStr = "Ready!\n";
-char* liveAppStr = "Live.\n";
-char* exitAppStr = "Goodbye, we need a good run! Good fortune. Gods speed. And I hope you well in all of your future endavors.\n";
+char* loadingAppStr = "Loading application...\n\n";
+char* readyAppStr = "Application ready!\n\n";
+char* liveAppStr = "Application live and awaiting your orders.\n";
+char* exitAppStr = "Goodbye, we had a good run! Good fortune. Gods speed. And I hope you well in all of your future endavors.\n";
+
+// Main Setup
+
+// Main Loop
 
 // Initialize
 
@@ -20,26 +24,23 @@ void initApp() {
 
 }
 
-// Talk
-
-void talk(char* string) { // In case we need to write to another console
-  printf("%s",string);
-}
-
 // Run Functions
 
 void runAppLoading() {
-  talk(loadingAppStr);
-  talk(readyAppStr);
+
+  console(loadingAppStr);
+
+  console(readyAppStr);
+
   appMode = 1;
 }
 
 void runAppLive() {
-  talk(liveAppStr);
+  console(liveAppStr);
 }
 
 void runAppExit() {
-  talk(exitAppStr);
+  console(exitAppStr);
   exit(0);
 }
 
