@@ -8,7 +8,7 @@ void console(char* string) {
 
 void setup() {
 
-  //display_init(frame,width,height,stride);
+  display_init(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
 
 }
 
