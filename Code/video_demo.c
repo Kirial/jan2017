@@ -93,11 +93,11 @@ const ivt_t ivt[] = {
 int main(void)
 {
 
-	setup(); // Wood Wood Project
-
 	DemoInitialize();
 
 	DemoRun();
+
+	setup(); // Wood Wood Project
 
 	loop();  // Wood Wood Project
 

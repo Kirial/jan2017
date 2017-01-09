@@ -50,4 +50,21 @@ void draw_pixel(int startX, int startY, struct color *color) {
   }
 }
 
+void draw_rectangle(int startX, int startY, int width, int height, int stroke, struct color *color) {
+  long iPixelAddr
+  long x,y;
+
+  iPixelAddr += displayStride * startY;
+
+  for(x = startX, x < startX+width; x++) {
+    iPixelAddr = x;
+
+    for(y = startY, y < startY+height; y++) {
+
+      colorFramePixel(*displayFrame, iPixelAddr, *color);
+
+    }
+  }
+}
+
 #endif
