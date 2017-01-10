@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Mon Jan 09 14:59:32 2017
+| Date             : Tue Jan 10 16:20:27 2017
 | Host             : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_in_wrapper_power_routed.rpt -pb hdmi_in_wrapper_power_summary_routed.pb -rpx hdmi_in_wrapper_power_routed.rpx
 | Design           : hdmi_in_wrapper
@@ -34,8 +34,8 @@ Table of Contents
 | Dynamic (W)              | 1.951 |
 | Device Static (W)        | 0.143 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 60.9  |
-| Junction Temperature (C) | 49.1  |
+| Max Ambient (C)          | 60.8  |
+| Junction Temperature (C) | 49.2  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,19 +49,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.061 |       12 |       --- |             --- |
-| Slice Logic              |     0.018 |    24683 |       --- |             --- |
-|   LUT as Logic           |     0.015 |     7228 |     17600 |           41.07 |
-|   Register               |     0.002 |    13309 |     35200 |           37.81 |
+| Clocks                   |     0.063 |       12 |       --- |             --- |
+| Slice Logic              |     0.017 |    25269 |       --- |             --- |
+|   LUT as Logic           |     0.014 |     7471 |     17600 |           42.45 |
+|   Register               |     0.002 |    13555 |     35200 |           38.51 |
 |   CARRY4                 |    <0.001 |      303 |      4400 |            6.89 |
-|   F7/F8 Muxes            |    <0.001 |      228 |     17600 |            1.30 |
+|   F7/F8 Muxes            |    <0.001 |      258 |     17600 |            1.47 |
 |   LUT as Distributed RAM |    <0.001 |      286 |      6000 |            4.77 |
 |   LUT as Shift Register  |    <0.001 |      256 |      6000 |            4.27 |
-|   Others                 |    <0.001 |     1013 |       --- |             --- |
-| Signals                  |     0.026 |    18483 |       --- |             --- |
+|   Others                 |    <0.001 |     1032 |       --- |             --- |
+| Signals                  |     0.025 |    18857 |       --- |             --- |
 | Block RAM                |     0.015 |       19 |        60 |           31.67 |
 | MMCM                     |     0.226 |        2 |         2 |          100.00 |
-| I/O                      |     0.044 |       44 |       100 |           44.00 |
+| I/O                      |     0.044 |       60 |       100 |           60.00 |
 | PS7                      |     1.562 |        1 |       --- |             --- |
 | Static Power             |     0.143 |          |           |                 |
 | Total                    |     2.094 |          |           |                 |
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.132 |       0.123 |      0.009 |
+| Vccint    |       1.000 |     0.133 |       0.123 |      0.009 |
 | Vccaux    |       1.800 |     0.153 |       0.141 |      0.012 |
 | Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -167,11 +167,62 @@ Table of Contents
 |       U0                                                                                                           |     0.110 |
 |         Inst_mmcme2_drp                                                                                            |     0.109 |
 |         axi_dynclk_S00_AXI_inst                                                                                    |     0.001 |
+|     axi_gpio_0                                                                                                     |    <0.001 |
+|       U0                                                                                                           |    <0.001 |
+|         AXI_LITE_IPIF_I                                                                                            |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                                                       |    <0.001 |
+|             I_DECODER                                                                                              |    <0.001 |
+|         gpio_core_1                                                                                                |    <0.001 |
+|     axi_gpio_1                                                                                                     |    <0.001 |
+|       U0                                                                                                           |    <0.001 |
+|         AXI_LITE_IPIF_I                                                                                            |    <0.001 |
+|           I_SLAVE_ATTACHMENT                                                                                       |    <0.001 |
+|             I_DECODER                                                                                              |    <0.001 |
+|               MEM_DECODE_GEN[0].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                      |    <0.001 |
+|               MEM_DECODE_GEN[1].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                      |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[10].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[11].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[12].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[13].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[14].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[15].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[8].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[9].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|         INTR_CTRLR_GEN.INTERRUPT_CONTROL_I                                                                         |    <0.001 |
+|         gpio_core_1                                                                                                |    <0.001 |
+|           Not_Dual.INPUT_DOUBLE_REGS3                                                                              |    <0.001 |
 |     axi_gpio_btn                                                                                                   |    <0.001 |
 |       U0                                                                                                           |    <0.001 |
 |         AXI_LITE_IPIF_I                                                                                            |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                                                       |    <0.001 |
 |             I_DECODER                                                                                              |    <0.001 |
+|               MEM_DECODE_GEN[0].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                      |    <0.001 |
+|               MEM_DECODE_GEN[1].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                      |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[10].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[11].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[12].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[13].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[14].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[15].MULTIPLE_CES_THIS_CS_GEN.CE_I                                       |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[8].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|               MEM_DECODE_GEN[1].PER_CE_GEN[9].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |    <0.001 |
+|         INTR_CTRLR_GEN.INTERRUPT_CONTROL_I                                                                         |    <0.001 |
 |         gpio_core_1                                                                                                |    <0.001 |
 |           Not_Dual.INPUT_DOUBLE_REGS3                                                                              |    <0.001 |
 |     axi_gpio_led                                                                                                   |    <0.001 |
@@ -722,7 +773,7 @@ Table of Contents
 |                     DYNSHREG_F_I                                                                                   |    <0.001 |
 |             I_RD_STATUS_CNTLR                                                                                      |    <0.001 |
 |             I_RESET                                                                                                |    <0.001 |
-|           GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                                                                        |     0.009 |
+|           GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                                                                        |     0.010 |
 |             GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                                                                    |     0.004 |
 |               ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                                                                |    <0.001 |
 |               I_DATA_FIFO                                                                                          |     0.003 |
@@ -961,6 +1012,12 @@ Table of Contents
 |               gen_target[7].gen_region[0].gen_comparator_static.gen_addr_range.addr_decode_comparator              |    <0.001 |
 |                 LUT_LEVEL[3].compare_inst                                                                          |    <0.001 |
 |                 LUT_LEVEL[4].compare_inst                                                                          |    <0.001 |
+|               gen_target[8].gen_region[0].gen_comparator_static.gen_addr_range.addr_decode_comparator              |    <0.001 |
+|                 LUT_LEVEL[3].compare_inst                                                                          |    <0.001 |
+|                 LUT_LEVEL[4].compare_inst                                                                          |    <0.001 |
+|               gen_target[9].gen_region[0].gen_comparator_static.gen_addr_range.addr_decode_comparator              |    <0.001 |
+|                 LUT_LEVEL[3].compare_inst                                                                          |    <0.001 |
+|                 LUT_LEVEL[4].compare_inst                                                                          |    <0.001 |
 |             gen_decerr.decerr_slave_inst                                                                           |    <0.001 |
 |             mi_arready_mux_inst                                                                                    |    <0.001 |
 |             mi_awready_mux_inst                                                                                    |    <0.001 |
@@ -1017,31 +1074,31 @@ Table of Contents
 |                               prim_noinit.ram                                                                      |    <0.001 |
 |         FORMATTER_INST                                                                                             |    <0.001 |
 |         SYNC_INST                                                                                                  |    <0.001 |
-|     v_tc_0                                                                                                         |     0.014 |
-|       U0                                                                                                           |     0.014 |
+|     v_tc_0                                                                                                         |     0.013 |
+|       U0                                                                                                           |     0.013 |
 |         U_TC_TOP                                                                                                   |     0.001 |
 |           GEN_GENERATOR.U_TC_GEN                                                                                   |    <0.001 |
-|         U_VIDEO_CTRL                                                                                               |     0.013 |
+|         U_VIDEO_CTRL                                                                                               |     0.012 |
 |           AXI4_LITE_INTERFACE.AXI_LITE_IPIF_I                                                                      |    <0.001 |
 |             I_SLAVE_ATTACHMENT                                                                                     |    <0.001 |
 |               I_DECODER                                                                                            |    <0.001 |
 |                 MEM_DECODE_GEN[0].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                    |    <0.001 |
 |                 MEM_DECODE_GEN[1].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                    |    <0.001 |
 |           AXI4_LITE_INTERFACE.CORE_MUX0                                                                            |     0.001 |
-|           AXI4_LITE_INTERFACE.GENR_MUX0                                                                            |     0.004 |
+|           AXI4_LITE_INTERFACE.GENR_MUX0                                                                            |     0.003 |
 |           AXI4_LITE_INTERFACE.SYNC2PROCCLK_I                                                                       |    <0.001 |
 |           AXI4_LITE_INTERFACE.SYNC2VIDCLK_I                                                                        |     0.002 |
-|     v_tc_1                                                                                                         |     0.020 |
-|       U0                                                                                                           |     0.020 |
+|     v_tc_1                                                                                                         |     0.019 |
+|       U0                                                                                                           |     0.019 |
 |         U_TC_TOP                                                                                                   |     0.004 |
 |           GEN_DETECTION.U_tc_DET                                                                                   |     0.004 |
-|         U_VIDEO_CTRL                                                                                               |     0.016 |
+|         U_VIDEO_CTRL                                                                                               |     0.015 |
 |           AXI4_LITE_INTERFACE.AXI_LITE_IPIF_I                                                                      |    <0.001 |
 |             I_SLAVE_ATTACHMENT                                                                                     |    <0.001 |
 |               I_DECODER                                                                                            |    <0.001 |
 |                 MEM_DECODE_GEN[0].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                    |    <0.001 |
 |                 MEM_DECODE_GEN[1].GEN_FOR_MULTI_CS.MEM_SELECT_I                                                    |    <0.001 |
-|           AXI4_LITE_INTERFACE.CORE_MUX0                                                                            |     0.002 |
+|           AXI4_LITE_INTERFACE.CORE_MUX0                                                                            |     0.001 |
 |           AXI4_LITE_INTERFACE.GENR_MUX0                                                                            |     0.006 |
 |           AXI4_LITE_INTERFACE.SYNC2PROCCLK_I                                                                       |    <0.001 |
 |           AXI4_LITE_INTERFACE.SYNC2VIDCLK_I                                                                        |     0.002 |

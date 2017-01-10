@@ -258,69 +258,69 @@ set_property IOSTANDARD LVCMOS33 [get_ports ddc_sda_io]
 
 ##Pmod Header JD
 ##IO_L5N_T0_34
-set_property PACKAGE_PIN T15 [get_ports {gpio_rtl_0_tri_o[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[0]}]
+set_property PACKAGE_PIN T15 [get_ports {gpio_rtl_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[0]}]
 
 ##IO_L5P_T0_34
-set_property PACKAGE_PIN T14 [get_ports {gpio_rtl_0_tri_o[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[1]}]
+set_property PACKAGE_PIN T14 [get_ports {gpio_rtl_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[1]}]
 
 ##IO_L6N_T0_VREF_34
-set_property PACKAGE_PIN R14 [get_ports {gpio_rtl_0_tri_o[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[2]}]
+set_property PACKAGE_PIN R14 [get_ports {gpio_rtl_tri_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[2]}]
 
 ##IO_L6P_T0_34
-set_property PACKAGE_PIN P14 [get_ports {gpio_rtl_0_tri_o[3]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[3]}]
+set_property PACKAGE_PIN P14 [get_ports {gpio_rtl_tri_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[3]}]
 
 ##IO_L11N_T1_SRCC_34
-set_property PACKAGE_PIN U15 [get_ports {gpio_rtl_0_tri_o[4]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[4]}]
+set_property PACKAGE_PIN U15 [get_ports {gpio_rtl_tri_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[4]}]
 
 ##IO_L11P_T1_SRCC_34
-set_property PACKAGE_PIN U14 [get_ports {gpio_rtl_0_tri_o[5]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[5]}]
+set_property PACKAGE_PIN U14 [get_ports {gpio_rtl_tri_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[5]}]
 
 ##IO_L21N_T3_DQS_34
-set_property PACKAGE_PIN V18 [get_ports {gpio_rtl_0_tri_o[6]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[6]}]
+set_property PACKAGE_PIN V18 [get_ports {gpio_rtl_tri_o[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[6]}]
 
 ##IO_L21P_T3_DQS_34
-set_property PACKAGE_PIN V17 [get_ports {gpio_rtl_0_tri_o[7]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[7]}]
+set_property PACKAGE_PIN V17 [get_ports {gpio_rtl_tri_o[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_o[7]}]
 
 ##Pmod Header JE
 ##IO_L4P_T0_34
-set_property PACKAGE_PIN V12 [get_ports {gpio_rtl_tri_i[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[0]}]
+set_property PACKAGE_PIN V12 [get_ports {gpio_rtl_0_tri_i[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[0]}]
 
 ##IO_L18N_T2_34
-set_property PACKAGE_PIN W16 [get_ports {gpio_rtl_tri_i[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[1]}]
+set_property PACKAGE_PIN W16 [get_ports {gpio_rtl_0_tri_i[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[1]}]
 
 ##IO_25_35
-set_property PACKAGE_PIN J15 [get_ports {gpio_rtl_tri_i[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[2]}]
+set_property PACKAGE_PIN J15 [get_ports {gpio_rtl_0_tri_i[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[2]}]
 
 ##IO_L19P_T3_35
-set_property PACKAGE_PIN H15 [get_ports {gpio_rtl_tri_i[3]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[3]}]
+set_property PACKAGE_PIN H15 [get_ports {gpio_rtl_0_tri_i[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[3]}]
 
 ##IO_L3N_T0_DQS_34
-set_property PACKAGE_PIN V13 [get_ports {gpio_rtl_tri_i[4]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[4]}]
+set_property PACKAGE_PIN V13 [get_ports {gpio_rtl_0_tri_i[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[4]}]
 
 ##IO_L9N_T1_DQS_34
-set_property PACKAGE_PIN U17 [get_ports {gpio_rtl_tri_i[5]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[5]}]
+set_property PACKAGE_PIN U17 [get_ports {gpio_rtl_0_tri_i[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[5]}]
 
 ##IO_L20P_T3_34
-set_property PACKAGE_PIN T17 [get_ports {gpio_rtl_tri_i[6]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[6]}]
+set_property PACKAGE_PIN T17 [get_ports {gpio_rtl_0_tri_i[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[6]}]
 
 ##IO_L7N_T1_34
-set_property PACKAGE_PIN Y17 [get_ports {gpio_rtl_tri_i[7]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[7]}]
+set_property PACKAGE_PIN Y17 [get_ports {gpio_rtl_0_tri_i[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_i[7]}]
 
 
 ##USB-OTG overcurrent detect pin

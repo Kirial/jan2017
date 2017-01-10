@@ -2,13 +2,13 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Jan 10 12:37:53 2017
-# Process ID: 9104
-# Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/XADC/proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2904 C:\Users\taras\OneDrive\skolenProjekt\3UgersProjektJan2017\ZYBO-master\Projects\XADC\proj\XADC.xpr
-# Log file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/XADC/proj/vivado.log
-# Journal file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/XADC/proj\vivado.jou
+# Start of session at: Tue Jan 10 15:48:27 2017
+# Process ID: 11344
+# Current directory: C:/Projects/jan2017/ZYBO-master/Projects/XADC/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8128 C:\Projects\jan2017\ZYBO-master\Projects\XADC\proj\XADC.xpr
+# Log file: C:/Projects/jan2017/ZYBO-master/Projects/XADC/proj/vivado.log
+# Journal file: C:/Projects/jan2017/ZYBO-master/Projects/XADC/proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/XADC/proj/XADC.xpr
+open_project C:/Projects/jan2017/ZYBO-master/Projects/XADC/proj/XADC.xpr
 update_compile_order -fileset sources_1
