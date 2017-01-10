@@ -63,7 +63,9 @@ ENTITY hdmi_in_xlconcat_0_0 IS
     In2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     In3 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     In4 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    dout : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
+    In5 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    In6 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    dout : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
   );
 END hdmi_in_xlconcat_0_0;
 
@@ -140,7 +142,7 @@ ARCHITECTURE hdmi_in_xlconcat_0_0_arch OF hdmi_in_xlconcat_0_0 IS
       In29 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       In30 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       In31 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      dout : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
+      dout : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
     );
   END COMPONENT xlconcat;
 BEGIN
@@ -178,8 +180,8 @@ BEGIN
       IN29_WIDTH => 1,
       IN30_WIDTH => 1,
       IN31_WIDTH => 1,
-      dout_width => 5,
-      NUM_PORTS => 5
+      dout_width => 7,
+      NUM_PORTS => 7
     )
     PORT MAP (
       In0 => In0,
@@ -187,8 +189,8 @@ BEGIN
       In2 => In2,
       In3 => In3,
       In4 => In4,
-      In5 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
-      In6 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
+      In5 => In5,
+      In6 => In6,
       In7 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       In8 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),
       In9 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 1)),

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Vga_Main_V1/src/HDMI_IN/src/v2&apos;" deleteContents="false" description="Delete resource &apos;Vga_Main_V1/src/HDMI_IN/src/v2&apos;" element1="/Vga_Main_V1/src/HDMI_IN/src/v2" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1484053504173"/>
+</session>

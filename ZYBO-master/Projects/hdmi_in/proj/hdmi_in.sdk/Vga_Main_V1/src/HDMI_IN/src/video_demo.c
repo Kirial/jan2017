@@ -94,7 +94,7 @@ const ivt_t ivt[] = {
 
 int main(void)
 {
-	xil_print_f("hola amigo ");
+
 	DemoInitialize();
 
 	DemoRun();

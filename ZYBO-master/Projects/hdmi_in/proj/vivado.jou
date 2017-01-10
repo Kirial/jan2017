@@ -2,14 +2,25 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Jan 10 12:00:02 2017
-# Process ID: 7304
+# Start of session at: Tue Jan 10 15:05:43 2017
+# Process ID: 1108
 # Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6732 C:\Users\taras\OneDrive\skolenProjekt\3UgersProjektJan2017\ZYBO-master\Projects\hdmi_in\proj\hdmi_in.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent732 C:\Users\taras\OneDrive\skolenProjekt\3UgersProjektJan2017\ZYBO-master\Projects\hdmi_in\proj\hdmi_in.xpr
 # Log file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/vivado.log
 # Journal file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1 -noclean_dir 
+launch_runs impl_1
+wait_on_run impl_1
 launch_sdk -workspace C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.sdk -hwspec C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1

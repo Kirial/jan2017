@@ -9,7 +9,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/HDMI_IN/src/video_capture/subdir.mk
--include src/HDMI_IN/src/v2/subdir.mk
 -include src/HDMI_IN/src/timer_ps/subdir.mk
 -include src/HDMI_IN/src/intc/subdir.mk
 -include src/HDMI_IN/src/dynclk/subdir.mk
