@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484044538">
-  <File Type="OPT-DCP" Name="XADCdemo_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="XADCdemo_route_status.pb"/>
   <File Type="PA-TCL" Name="XADCdemo.tcl"/>
+  <File Type="OPT-DCP" Name="XADCdemo_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="XADCdemo_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="XADCdemo_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="XADCdemo.vdi"/>
   <File Type="PWROPT-DRC" Name="XADCdemo_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="XADCdemo_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="XADCdemo_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="XADCdemo_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="XADCdemo_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="XADCdemo.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="XADCdemo_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="XADCdemo_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="XADCdemo_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="XADCdemo.bit"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="XADCdemo_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="XADCdemo.bit"/>
   <File Type="ROUTE-PWR" Name="XADCdemo_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="XADCdemo_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="XADCdemo_power_routed.rpx"/>
@@ -85,9 +85,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
-      <Desc>Vivado Implementation Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
