@@ -3,10 +3,13 @@
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Start of session at: Tue Jan 10 16:04:14 2017
 # Process ID: 8620
 # Current directory: C:/Projects/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/impl_1
 =======
+=======
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 # Start of session at: Tue Jan 10 16:14:41 2017
 # Process ID: 716
 # Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/impl_1
@@ -272,7 +275,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 link_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.996 ; gain = 841.906
+=======
+link_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1059.117 ; gain = 848.590
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 =======
 link_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1059.117 ; gain = 848.590
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
@@ -288,21 +295,28 @@ INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.307 . Memory (MB): peak = 1048.996 ; gain = 0.000
 
 Starting Logic Optimization Task
 Implement Debug Cores | Checksum: 13a964305
 =======
+=======
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1059.117 ; gain = 0.000
 
 Starting Logic Optimization Task
 Implement Debug Cores | Checksum: 15d0ede37
+<<<<<<< HEAD
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 40 inverter(s) to 245 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 1 Retarget | Checksum: 16eaaf8a0
 
@@ -345,6 +359,24 @@ INFO: [Opt 31-12] Eliminated 4450 unconnected nets.
 INFO: [Opt 31-11] Eliminated 3822 unconnected cells.
 Phase 3 Sweep | Checksum: 4838d91e
 
+=======
+Phase 1 Retarget | Checksum: ee6ec658
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1059.117 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 13 load pin(s).
+INFO: [Opt 31-10] Eliminated 1723 cells.
+Phase 2 Constant Propagation | Checksum: a4c1e49f
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1059.117 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 4450 unconnected nets.
+INFO: [Opt 31-11] Eliminated 3822 unconnected cells.
+Phase 3 Sweep | Checksum: 4838d91e
+
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1059.117 ; gain = 0.000
 
 Starting Connectivity Check Task
@@ -353,12 +385,19 @@ Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1059.117
 Ending Logic Optimization Task | Checksum: 4838d91e
 
 Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1059.117 ; gain = 0.000
+<<<<<<< HEAD
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 INFO: [Common 17-83] Releasing license: Implementation
 22 Infos, 33 Warnings, 44 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
 <<<<<<< HEAD
+<<<<<<< HEAD
 opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1048.996 ; gain = 0.000
+=======
+opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1059.117 ; gain = 0.000
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 =======
 opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1059.117 ; gain = 0.000
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
@@ -367,15 +406,21 @@ Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1048.996 ; gain = 0.000
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Projects/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/impl_1/hdmi_in_wrapper_drc_opted.rpt.
 =======
+=======
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 1059.117 ; gain = 0.000
 write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1059.117 ; gain = 0.000
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/impl_1/hdmi_in_wrapper_drc_opted.rpt.
 report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1059.117 ; gain = 0.000
+<<<<<<< HEAD
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
@@ -498,8 +543,13 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 
 Phase 1 Placer Initialization
 <<<<<<< HEAD
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1048.996 ; gain = 0.000
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1048.996 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1059.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1059.117 ; gain = 0.000
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 =======
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1059.117 ; gain = 0.000
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1059.117 ; gain = 0.000
@@ -511,6 +561,7 @@ Phase 1.1.1 ParallelPlaceIOClockAndInitTop
 
 Phase 1.1.1.1 Pre-Place Cells
 <<<<<<< HEAD
+<<<<<<< HEAD
 Phase 1.1.1.1 Pre-Place Cells | Checksum: 6100cf30
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.317 . Memory (MB): peak = 1048.996 ; gain = 0.000
@@ -519,6 +570,16 @@ Phase 1.1.1.2 Constructing HAPIClkRuleMgr
 Phase 1.1.1.2 Constructing HAPIClkRuleMgr | Checksum: 6100cf30
 
 Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1048.996 ; gain = 0.000
+=======
+Phase 1.1.1.1 Pre-Place Cells | Checksum: 200ccdf9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.968 . Memory (MB): peak = 1059.117 ; gain = 0.000
+
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr | Checksum: 200ccdf9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1059.117 ; gain = 0.000
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 =======
 Phase 1.1.1.1 Pre-Place Cells | Checksum: 200ccdf9
 
@@ -699,6 +760,7 @@ Phase 1.1.1.3 IO and Clk Clean Up
 
 Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr
 <<<<<<< HEAD
+<<<<<<< HEAD
 Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: 6100cf30
 
 Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1048.996 ; gain = 0.000
@@ -730,6 +792,13 @@ Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: 200ccdf9
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1059.117 ; gain = 0.000
 Phase 1.1.1.3 IO and Clk Clean Up | Checksum: 200ccdf9
 
+=======
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: 200ccdf9
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1059.117 ; gain = 0.000
+Phase 1.1.1.3 IO and Clk Clean Up | Checksum: 200ccdf9
+
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1059.117 ; gain = 0.000
 
 Phase 1.1.1.4 Implementation Feasibility check On IDelay
@@ -1261,4 +1330,7 @@ INFO: [Common 17-186] 'C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan201
 INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream: Time (s): cpu = 00:00:55 ; elapsed = 00:00:49 . Memory (MB): peak = 1391.609 ; gain = 346.754
 INFO: [Common 17-206] Exiting Vivado at Tue Jan 10 16:22:41 2017...
+<<<<<<< HEAD
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37

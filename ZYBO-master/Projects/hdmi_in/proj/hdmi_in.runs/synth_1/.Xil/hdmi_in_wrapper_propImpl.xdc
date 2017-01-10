@@ -291,6 +291,7 @@ set_property src_info {type:XDC file:2 line:157 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN G18 [get_ports ddc_sda_io]
 set_property src_info {type:XDC file:2 line:261 export:INPUT save:INPUT read:READ} [current_design]
 <<<<<<< HEAD
+<<<<<<< HEAD
 set_property PACKAGE_PIN T15 [get_ports {gpio_rtl_0_tri_o[0]}]
 set_property src_info {type:XDC file:2 line:262 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_0_tri_o[0]}]
@@ -355,6 +356,8 @@ set_property PACKAGE_PIN Y17 [get_ports {gpio_rtl_tri_i[7]}]
 set_property src_info {type:XDC file:2 line:323 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_i[7]}]
 =======
+=======
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 set_property PACKAGE_PIN T15 [get_ports {gpio_rtl_tri_o[0]}]
 set_property src_info {type:XDC file:2 line:265 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T14 [get_ports {gpio_rtl_tri_o[1]}]
@@ -386,6 +389,9 @@ set_property src_info {type:XDC file:2 line:318 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN T17 [get_ports {gpio_rtl_0_tri_i[6]}]
 set_property src_info {type:XDC file:2 line:322 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y17 [get_ports {gpio_rtl_0_tri_i[7]}]
+<<<<<<< HEAD
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
 >>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 set_property src_info {type:XDC file:2 line:334 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN M19 [get_ports {vga_r[0]}]
