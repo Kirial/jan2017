@@ -140,3 +140,4 @@ selectCodeEditor("XADCdemo.v", 169, 137); // bH:N (JPanel:JComponent, cv:JFrame)
 selectCodeEditor("XADCdemo.v", 170, 123); // bH:N (JPanel:JComponent, cv:JFrame)
 selectCodeEditor("XADCdemo.v", 167, 138); // bH:N (JPanel:JComponent, cv:JFrame)
 // [Engine Memory]: 729 MB (+3930kb) [00:05:19]
+// [GUI Memory]: 80 MB (+624kb) [00:09:02]
