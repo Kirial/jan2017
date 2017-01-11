@@ -20,6 +20,7 @@ src/HDMI_IN/src/display_ctrl \
 src/HDMI_IN/src/dynclk \
 src/HDMI_IN/src/intc \
 src/HDMI_IN/src/timer_ps \
+src/HDMI_IN/src/v2 \
 src/HDMI_IN/src/video_capture \
 src/HDMI_IN/src \
 

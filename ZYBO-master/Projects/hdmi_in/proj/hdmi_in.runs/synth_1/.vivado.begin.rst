@@ -1,17 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-<<<<<<< HEAD
-    <Process Command="vivado.bat" Owner="taras" Host="DESKTOP-VO6VFHC" Pid="1664">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Process Command="vivado.bat" Owner="jespe" Host="THINKPAD" Pid="13796">
-=======
-    <Process Command="vivado.bat" Owner="taras" Host="DESKTOP-VO6VFHC" Pid="2432">
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
-=======
-    <Process Command="vivado.bat" Owner="taras" Host="DESKTOP-VO6VFHC" Pid="2432">
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
->>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
+    <Process Command="vivado.bat" Owner="taras" Host="DESKTOP-VO6VFHC" Pid="5136">
     </Process>
 </ProcessHandle>

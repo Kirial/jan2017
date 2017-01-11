@@ -1,20 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-<<<<<<< HEAD
-| Date         : Tue Jan 10 23:39:55 2017
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Date         : Tue Jan 10 16:04:07 2017
-| Host         : Thinkpad running 64-bit major release  (build 9200)
-=======
-=======
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
-| Date         : Tue Jan 10 16:14:33 2017
->>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
+| Date         : Tue Jan 10 22:48:41 2017
 | Host         : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 | Command      : report_utilization -file hdmi_in_wrapper_utilization_synth.rpt -pb hdmi_in_wrapper_utilization_synth.pb
 | Design       : hdmi_in_wrapper
 | Device       : 7z010clg400-1
@@ -42,16 +30,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                |  9404 |     0 |     17600 | 53.43 |
-|   LUT as Logic             |  8701 |     0 |     17600 | 49.44 |
+| Slice LUTs*                |  9188 |     0 |     17600 | 52.20 |
+|   LUT as Logic             |  8485 |     0 |     17600 | 48.21 |
 |   LUT as Memory            |   703 |     0 |      6000 | 11.72 |
 |     LUT as Distributed RAM |   302 |     0 |           |       |
 |     LUT as Shift Register  |   401 |     0 |           |       |
-| Slice Registers            | 16324 |     0 |     35200 | 46.38 |
-|   Register as Flip Flop    | 16324 |     0 |     35200 | 46.38 |
+| Slice Registers            | 16087 |     0 |     35200 | 45.70 |
+|   Register as Flip Flop    | 16087 |     0 |     35200 | 45.70 |
 |   Register as Latch        |     0 |     0 |     35200 |  0.00 |
-| F7 Muxes                   |   381 |     0 |      8800 |  4.33 |
-| F8 Muxes                   |    36 |     0 |      4400 |  0.82 |
+| F7 Muxes                   |   343 |     0 |      8800 |  3.90 |
+| F8 Muxes                   |     0 |     0 |      4400 |  0.00 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -70,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 265   |          Yes |           - |          Set |
 | 359   |          Yes |           - |        Reset |
-| 655   |          Yes |         Set |            - |
-| 15045 |          Yes |       Reset |            - |
+| 625   |          Yes |         Set |            - |
+| 14838 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,18 +134,18 @@ Table of Contents
 6. Specific Feature
 -------------------
 
-+-------------+------+-------+-----------+--------+
-|  Site Type  | Used | Fixed | Available |  Util% |
-+-------------+------+-------+-----------+--------+
-| BSCANE2     |    0 |     0 |         4 |   0.00 |
-| CAPTUREE2   |    0 |     0 |         1 |   0.00 |
-| DNA_PORT    |    0 |     0 |         1 |   0.00 |
-| EFUSE_USR   |    0 |     0 |         1 |   0.00 |
-| FRAME_ECCE2 |    0 |     0 |         1 |   0.00 |
-| ICAPE2      |    0 |     0 |         2 |   0.00 |
-| STARTUPE2   |    0 |     0 |         1 |   0.00 |
-| XADC        |    1 |     0 |         1 | 100.00 |
-+-------------+------+-------+-----------+--------+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
 
 
 7. Primitives
@@ -166,25 +154,24 @@ Table of Contents
 +------------+-------+----------------------+
 |  Ref Name  |  Used |  Functional Category |
 +------------+-------+----------------------+
-| FDRE       | 15045 |         Flop & Latch |
-| LUT3       |  2839 |                  LUT |
-| LUT6       |  2253 |                  LUT |
-| LUT5       |  1887 |                  LUT |
-| LUT2       |  1756 |                  LUT |
-| LUT4       |  1402 |                  LUT |
-| FDSE       |   655 |         Flop & Latch |
-| LUT1       |   637 |                  LUT |
-| MUXF7      |   381 |                MuxFx |
+| FDRE       | 14838 |         Flop & Latch |
+| LUT3       |  2806 |                  LUT |
+| LUT6       |  2281 |                  LUT |
+| LUT5       |  1800 |                  LUT |
+| LUT2       |  1637 |                  LUT |
+| LUT4       |  1335 |                  LUT |
+| LUT1       |   634 |                  LUT |
+| FDSE       |   625 |         Flop & Latch |
 | RAMD32     |   380 |   Distributed Memory |
 | FDCE       |   359 |         Flop & Latch |
 | SRL16E     |   354 |   Distributed Memory |
+| MUXF7      |   343 |                MuxFx |
 | CARRY4     |   325 |           CarryLogic |
 | FDPE       |   265 |         Flop & Latch |
 | BIBUF      |   130 |                   IO |
 | RAMS32     |   126 |   Distributed Memory |
 | RAMD64E    |    48 |   Distributed Memory |
 | SRLC32E    |    47 |   Distributed Memory |
-| MUXF8      |    36 |                MuxFx |
 | OBUF       |    28 |                   IO |
 | IBUF       |    24 |                   IO |
 | FIFO36E1   |    10 |         Block Memory |
@@ -197,7 +184,6 @@ Table of Contents
 | BUFG       |     3 |                Clock |
 | MMCME2_ADV |     2 |                Clock |
 | BUFR       |     2 |                Clock |
-| XADC       |     1 |               Others |
 | PS7        |     1 | Specialized Resource |
 | IDELAYCTRL |     1 |                   IO |
 | BUFIO      |     1 |                Clock |

@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
---Date        : Tue Jan 10 23:21:03 2017
+--Date        : Tue Jan 10 10:31:44 2017
 --Host        : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_in_wrapper.bd
 --Design      : hdmi_in_wrapper
@@ -42,8 +42,8 @@ entity hdmi_in_wrapper is
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ddc_scl_io : inout STD_LOGIC;
     ddc_sda_io : inout STD_LOGIC;
-    gpio_rtl_0_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_rtl_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_rtl_0_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_rtl_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     hdmi_hpd_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     iic_0_scl_io : inout STD_LOGIC;
     iic_0_sda_io : inout STD_LOGIC;
@@ -103,14 +103,14 @@ architecture STRUCTURE of hdmi_in_wrapper is
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    gpio_rtl_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_rtl_0_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     vga_b : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_g : out STD_LOGIC_VECTOR ( 5 downto 0 );
     vga_hs : out STD_LOGIC;
     vga_r : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_vs : out STD_LOGIC;
-    HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 )
+    HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 );
+    gpio_rtl_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_rtl_0_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component hdmi_in;
   component IOBUF is
@@ -205,8 +205,8 @@ hdmi_in_i: component hdmi_in
       TMDS_data_n(2 downto 0) => TMDS_data_n(2 downto 0),
       TMDS_data_p(2 downto 0) => TMDS_data_p(2 downto 0),
       btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0),
-      gpio_rtl_0_tri_i(7 downto 0) => gpio_rtl_0_tri_i(7 downto 0),
-      gpio_rtl_tri_o(7 downto 0) => gpio_rtl_tri_o(7 downto 0),
+      gpio_rtl_0_tri_o(7 downto 0) => gpio_rtl_0_tri_o(7 downto 0),
+      gpio_rtl_tri_i(7 downto 0) => gpio_rtl_tri_i(7 downto 0),
       hdmi_hpd_tri_o(0) => hdmi_hpd_tri_o(0),
       leds_4bits_tri_i(3) => leds_4bits_tri_i_3(3),
       leds_4bits_tri_i(2) => leds_4bits_tri_i_2(2),

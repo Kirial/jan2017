@@ -1,20 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-<<<<<<< HEAD
-| Date         : Tue Jan 10 23:41:24 2017
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Date         : Tue Jan 10 16:05:05 2017
-| Host         : Thinkpad running 64-bit major release  (build 9200)
-=======
-=======
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
-| Date         : Tue Jan 10 16:16:22 2017
->>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
+| Date         : Tue Jan 10 22:50:05 2017
 | Host         : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 | Command      : report_drc -file hdmi_in_wrapper_drc_opted.rpt
 | Design       : hdmi_in_wrapper
 | Device       : xc7z010clg400-1
@@ -35,20 +23,10 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 202
+             Violations found: 200
 
 2. REPORT DETAILS
 -----------------
-NSTD-1#1 Critical Warning
-Unspecified I/O Standard  
-12 out of 174 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: btns_4bits_tri_i[3:0], leds_4bits_tri_io[3:0], sws_4bits_tri_i[3:0].
-Related violations: <none>
-
-UCIO-1#1 Critical Warning
-Unconstrained Logical Port  
-12 out of 174 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: btns_4bits_tri_i[3:0], leds_4bits_tri_io[3:0], sws_4bits_tri_i[3:0].
-Related violations: <none>
-
 PLIDC-14#1 Warning
 IDELAYCTRL REFCLK should be same as ISERDES CLK  
 The BITSLICE cell IDELAYCTRL hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/IDelayCtrlX REFCLK pin should be driven by the same clock net as the associated ISERDES hdmi_in_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/InputSERDES_X/DeserializerMaster CLK or CLKDIV pin.

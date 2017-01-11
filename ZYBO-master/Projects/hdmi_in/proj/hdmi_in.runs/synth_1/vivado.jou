@@ -2,25 +2,11 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-<<<<<<< HEAD
-# Start of session at: Tue Jan 10 23:21:31 2017
-# Process ID: 7340
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Start of session at: Tue Jan 10 15:50:36 2017
-# Process ID: 10636
-# Current directory: C:/Projects/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/synth_1
-=======
-=======
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
-# Start of session at: Tue Jan 10 15:53:47 2017
-# Process ID: 7680
->>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
-# Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/synth_1
->>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+# Start of session at: Tue Jan 10 22:29:25 2017
+# Process ID: 9340
+# Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.runs/synth_1
 # Command line: vivado.exe -log hdmi_in_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source hdmi_in_wrapper.tcl
-# Log file: C:/Projects/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.vds
-# Journal file: C:/Projects/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/synth_1\vivado.jou
+# Log file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.vds
+# Journal file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source hdmi_in_wrapper.tcl -notrace
