@@ -78,8 +78,8 @@ read_vhdl -library xil_defaultlib C:/Users/taras/OneDrive/skolenProjekt/3UgersPr
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/src/constraints/ZYBO_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/src/constraints/ZYBO_Master.xdc]
+read_xdc C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

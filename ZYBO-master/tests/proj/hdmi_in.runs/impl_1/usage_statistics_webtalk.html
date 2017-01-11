@@ -4,7 +4,7 @@
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>software_version_and_target_device</B></TD></TR>
 <TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>beta</B></TD><TD>FALSE</TD>
   <TD BGCOLOR='#DBE5F1'><B>build_version</B></TD><TD>1577090</TD>
-</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Tue Jan 10 16:22:37 2017</TD>
+</TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>date_generated</B></TD><TD>Tue Jan 10 22:55:18 2017</TD>
   <TD BGCOLOR='#DBE5F1'><B>os_platform</B></TD><TD>WIN64</TD>
 </TR><TR ALIGN='LEFT'>  <TD BGCOLOR='#DBE5F1'><B>product_version</B></TD><TD>Vivado v2016.2 (64-bit)</TD>
   <TD BGCOLOR='#DBE5F1'><B>project_id</B></TD><TD>48aa2aa34604467f9cef12d626ff8bd4</TD>
@@ -31,7 +31,7 @@
   <TR ALIGN='CENTER' BGCOLOR='#A7BFDE'><TD COLSPAN='4'><B>vivado_usage</B></TD></TR>
 <TR ALIGN='LEFT'>  <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>other_data</B></TD></TR>
-<TR ALIGN='LEFT'>   <TD>guimode=7</TD>
+<TR ALIGN='LEFT'>   <TD>guimode=6</TD>
 </TR>  </TABLE>
   <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
    <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>project_data</B></TD></TR>
@@ -157,8 +157,8 @@
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>IP_Integrator/1</B></TD></TR>
 <TR ALIGN='LEFT'>    <TD>bdsource=USER</TD>
     <TD>core_container=NA</TD>
-    <TD>da_axi4_cnt=3</TD>
-    <TD>da_board_cnt=4</TD>
+    <TD>da_axi4_cnt=2</TD>
+    <TD>da_board_cnt=2</TD>
 </TR><TR ALIGN='LEFT'>    <TD>iptotal=1</TD>
     <TD>maxhierdepth=0</TD>
     <TD>numblks=46</TD>
@@ -362,16 +362,16 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>axi_gpio/1</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>c_all_inputs=0</TD>
+<TR ALIGN='LEFT'>    <TD>c_all_inputs=1</TD>
     <TD>c_all_inputs_2=0</TD>
-    <TD>c_all_outputs=1</TD>
+    <TD>c_all_outputs=0</TD>
     <TD>c_all_outputs_2=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_dout_default=0x00000000</TD>
     <TD>c_dout_default_2=0x00000000</TD>
     <TD>c_family=zynq</TD>
     <TD>c_gpio2_width=32</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_gpio_width=8</TD>
-    <TD>c_interrupt_present=0</TD>
+    <TD>c_interrupt_present=1</TD>
     <TD>c_is_dual=0</TD>
     <TD>c_s_axi_addr_width=9</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_s_axi_data_width=32</TD>
@@ -392,16 +392,16 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>axi_gpio/2</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>c_all_inputs=1</TD>
+<TR ALIGN='LEFT'>    <TD>c_all_inputs=0</TD>
     <TD>c_all_inputs_2=0</TD>
-    <TD>c_all_outputs=0</TD>
+    <TD>c_all_outputs=1</TD>
     <TD>c_all_outputs_2=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_dout_default=0x00000000</TD>
     <TD>c_dout_default_2=0x00000000</TD>
     <TD>c_family=zynq</TD>
     <TD>c_gpio2_width=32</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_gpio_width=8</TD>
-    <TD>c_interrupt_present=1</TD>
+    <TD>c_interrupt_present=0</TD>
     <TD>c_is_dual=0</TD>
     <TD>c_s_axi_addr_width=9</TD>
 </TR><TR ALIGN='LEFT'>    <TD>c_s_axi_data_width=32</TD>
@@ -1689,11 +1689,11 @@
 </TR><TR ALIGN='LEFT'>    <TD>lut2_functional_category=LUT</TD>
     <TD>lut2_used=1725</TD>
     <TD>lut3_functional_category=LUT</TD>
-    <TD>lut3_used=2273</TD>
+    <TD>lut3_used=2272</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut4_functional_category=LUT</TD>
-    <TD>lut4_used=1269</TD>
+    <TD>lut4_used=1271</TD>
     <TD>lut5_functional_category=LUT</TD>
-    <TD>lut5_used=1780</TD>
+    <TD>lut5_used=1779</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut6_functional_category=LUT</TD>
     <TD>lut6_used=1783</TD>
     <TD>mmcme2_adv_functional_category=Clock</TD>
@@ -1737,8 +1737,8 @@
     <TD>lut_as_distributed_ram_used=286</TD>
     <TD>lut_as_logic_available=17600</TD>
     <TD>lut_as_logic_fixed=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_used=7471</TD>
-    <TD>lut_as_logic_util_percentage=42.45</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_used=7464</TD>
+    <TD>lut_as_logic_util_percentage=42.41</TD>
     <TD>lut_as_memory_available=6000</TD>
     <TD>lut_as_memory_fixed=0</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_used=542</TD>
@@ -1755,20 +1755,20 @@
     <TD>register_as_latch_util_percentage=0.00</TD>
 </TR><TR ALIGN='LEFT'>    <TD>slice_luts_available=17600</TD>
     <TD>slice_luts_fixed=0</TD>
-    <TD>slice_luts_used=8013</TD>
-    <TD>slice_luts_util_percentage=45.53</TD>
+    <TD>slice_luts_used=8006</TD>
+    <TD>slice_luts_util_percentage=45.49</TD>
 </TR><TR ALIGN='LEFT'>    <TD>slice_registers_available=35200</TD>
     <TD>slice_registers_fixed=0</TD>
     <TD>slice_registers_used=13555</TD>
     <TD>slice_registers_util_percentage=38.51</TD>
 </TR><TR ALIGN='LEFT'>    <TD>fully_used_lut_ff_pairs_fixed=38.51</TD>
-    <TD>fully_used_lut_ff_pairs_used=1041</TD>
+    <TD>fully_used_lut_ff_pairs_used=1040</TD>
     <TD>lut_as_distributed_ram_fixed=0</TD>
     <TD>lut_as_distributed_ram_used=286</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_logic_available=17600</TD>
     <TD>lut_as_logic_fixed=0</TD>
-    <TD>lut_as_logic_used=7471</TD>
-    <TD>lut_as_logic_util_percentage=42.45</TD>
+    <TD>lut_as_logic_used=7464</TD>
+    <TD>lut_as_logic_util_percentage=42.41</TD>
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_memory_available=6000</TD>
     <TD>lut_as_memory_fixed=0</TD>
     <TD>lut_as_memory_used=542</TD>
@@ -1776,28 +1776,28 @@
 </TR><TR ALIGN='LEFT'>    <TD>lut_as_shift_register_fixed=0</TD>
     <TD>lut_as_shift_register_used=256</TD>
     <TD>lut_ff_pairs_with_one_unused_flip_flop_fixed=256</TD>
-    <TD>lut_ff_pairs_with_one_unused_flip_flop_used=2682</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_ff_pairs_with_one_unused_lut_fixed=2682</TD>
-    <TD>lut_ff_pairs_with_one_unused_lut_used=2975</TD>
+    <TD>lut_ff_pairs_with_one_unused_flip_flop_used=2694</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_ff_pairs_with_one_unused_lut_fixed=2694</TD>
+    <TD>lut_ff_pairs_with_one_unused_lut_used=2978</TD>
     <TD>lut_flip_flop_pairs_available=17600</TD>
     <TD>lut_flip_flop_pairs_fixed=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>lut_flip_flop_pairs_used=4232</TD>
-    <TD>lut_flip_flop_pairs_util_percentage=24.05</TD>
+</TR><TR ALIGN='LEFT'>    <TD>lut_flip_flop_pairs_used=4223</TD>
+    <TD>lut_flip_flop_pairs_util_percentage=23.99</TD>
     <TD>slice_available=4400</TD>
     <TD>slice_fixed=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>slice_used=3805</TD>
-    <TD>slice_util_percentage=86.48</TD>
+</TR><TR ALIGN='LEFT'>    <TD>slice_used=3763</TD>
+    <TD>slice_util_percentage=85.52</TD>
     <TD>slicel_fixed=0</TD>
-    <TD>slicel_used=2494</TD>
+    <TD>slicel_used=2473</TD>
 </TR><TR ALIGN='LEFT'>    <TD>slicem_fixed=0</TD>
-    <TD>slicem_used=1311</TD>
+    <TD>slicem_used=1290</TD>
     <TD>unique_control_sets_used=689</TD>
     <TD>using_o5_and_o6_fixed=689</TD>
 </TR><TR ALIGN='LEFT'>    <TD>using_o5_and_o6_used=145</TD>
     <TD>using_o5_output_only_fixed=145</TD>
-    <TD>using_o5_output_only_used=11</TD>
-    <TD>using_o6_output_only_fixed=11</TD>
-</TR><TR ALIGN='LEFT'>    <TD>using_o6_output_only_used=100</TD>
+    <TD>using_o5_output_only_used=15</TD>
+    <TD>using_o6_output_only_fixed=15</TD>
+</TR><TR ALIGN='LEFT'>    <TD>using_o6_output_only_used=96</TD>
 </TR>   </TABLE>
    </TD></TR>
    <TR><TD>
@@ -1843,7 +1843,7 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>actual_expansions=7954348</TD>
+<TR ALIGN='LEFT'>    <TD>actual_expansions=7963557</TD>
     <TD>bogomips=0</TD>
     <TD>bram18=4</TD>
     <TD>bram36=17</TD>
@@ -1853,7 +1853,7 @@
     <TD>ctrls=689</TD>
 </TR><TR ALIGN='LEFT'>    <TD>dsp=0</TD>
     <TD>effort=2</TD>
-    <TD>estimated_expansions=14499198</TD>
+    <TD>estimated_expansions=14369148</TD>
     <TD>ff=13555</TD>
 </TR><TR ALIGN='LEFT'>    <TD>global_clocks=3</TD>
     <TD>high_fanout_nets=7</TD>
@@ -1863,7 +1863,7 @@
     <TD>nets=32392</TD>
     <TD>pins=138034</TD>
     <TD>pll=0</TD>
-</TR><TR ALIGN='LEFT'>    <TD>router_runtime=78.103000</TD>
+</TR><TR ALIGN='LEFT'>    <TD>router_runtime=50.657000</TD>
     <TD>router_timing_driven=1</TD>
     <TD>threads=2</TD>
     <TD>timing_constraints_exist=1</TD>
@@ -1913,10 +1913,10 @@
    <TR><TD>
    <TABLE BORDER='1' CELLSPACING='0' WIDTH='100%'>
     <TR ALIGN='CENTER' BGCOLOR='#DBE5F1'><TD COLSPAN='4'><B>usage</B></TD></TR>
-<TR ALIGN='LEFT'>    <TD>elapsed=00:19:47s</TD>
+<TR ALIGN='LEFT'>    <TD>elapsed=00:18:31s</TD>
     <TD>hls_ip=0</TD>
-    <TD>memory_gain=932.457MB</TD>
-    <TD>memory_peak=1227.996MB</TD>
+    <TD>memory_gain=933.207MB</TD>
+    <TD>memory_peak=1229.473MB</TD>
 </TR>   </TABLE>
    </TD></TR>
   </TABLE><BR>

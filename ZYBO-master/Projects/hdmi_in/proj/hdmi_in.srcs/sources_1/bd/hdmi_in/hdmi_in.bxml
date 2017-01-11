@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="hdmi_in" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1484057327"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1484057327"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1484057327"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1484086888"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1484086888"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1484086888"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\hdmi_in_axi_dynclk_0_0\hdmi_in_axi_dynclk_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_dynclk_0"/>
@@ -47,6 +47,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\hdmi_in_axi_mem_intercon_0\hdmi_in_axi_mem_intercon_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_mem_intercon"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -94,6 +95,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\hdmi_in_processing_system7_0_axi_periph_0\hdmi_in_processing_system7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="processing_system7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -196,6 +198,14 @@
       </File>
       <File Name="ip\hdmi_in_axi_gpio_1_0\hdmi_in_axi_gpio_1_0.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\hdmi_in_xadc_wiz_0_0_1\hdmi_in_xadc_wiz_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xadc_wiz_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

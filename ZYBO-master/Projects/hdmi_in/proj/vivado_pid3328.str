@@ -1,0 +1,540 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 3328
+
+Current time: 	1/10/17 11:06:30 PM CET
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	taras
+User home directory: C:/Users/taras
+User working directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj
+User country: 	DK
+User language: 	da
+User locale: 	da_DK
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/taras/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/taras/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	215 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 428 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\taras\OneDrive\skolenProjekt\3UgersProjektJan2017\ZYBO-master\Projects\hdmi_in\proj\hdmi_in.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj' 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 39 MB (+38656kb) [00:00:07]
+// [Engine Memory]: 413 MB (+281782kb) [00:00:07]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 462 MB. GUI used memory: 26 MB. Current time: 1/10/17 11:06:33 PM CET
+// [Engine Memory]: 479 MB (+47529kb) [00:00:12]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+5683kb) [00:00:16]
+// [Engine Memory]: 602 MB (+103218kb) [00:00:16]
+// [GUI Memory]: 68 MB (+19691kb) [00:00:17]
+// [Engine Memory]: 665 MB (+35159kb) [00:00:18]
+// [GUI Memory]: 73 MB (+2250kb) [00:00:18]
+// [GUI Memory]: 79 MB (+2496kb) [00:00:20]
+// [Engine Memory]: 706 MB (+7742kb) [00:00:20]
+// [GUI Memory]: 87 MB (+3645kb) [00:00:21]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: hdmi_in; location: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 957.969 ; gain = 310.266 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (ZYBO_Master.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ZYBO_Master.xdc]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ZYBO_Master.xdc]", 4, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+dismissFileChooser();
+// 'dw' command handler elapsed time: 5 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ZYBO_Master.xdc]", 4, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+// [GUI Memory]: 93 MB (+1757kb) [00:00:53]
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 740 MB. GUI used memory: 75 MB. Current time: 1/10/17 11:07:17 PM CET
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+// [GUI Memory]: 98 MB (+815kb) [00:01:18]
+// Elapsed time: 23 seconds
+dismissFileChooser();
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectTable(PAResourceAtoD.ConstraintsChooserPanel_FILE_TABLE, "ZYBO_Master.xdc ; C:\\Users\\taras\\OneDrive\\skolenProjekt\\3UgersProjektJan2017\\ZYBO-master\\Projects\\hdmi_in\\src\\constraints", 0, "C:\\Users\\taras\\OneDrive\\skolenProjekt\\3UgersProjektJan2017\\ZYBO-master\\Projects\\hdmi_in\\src\\constraints", 1); // v:v (JViewport:JComponent, b:g)
+// Elapsed time: 16 seconds
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 50 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_in_wrapper - STRUCTURE (hdmi_in_wrapper.vhd)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_in_wrapper - STRUCTURE (hdmi_in_wrapper.vhd)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_in_wrapper - STRUCTURE (hdmi_in_wrapper.vhd), hdmi_in_i - hdmi_in (hdmi_in.bd)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_in_wrapper - STRUCTURE (hdmi_in_wrapper.vhd), hdmi_in_i - hdmi_in (hdmi_in.bd)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// bL:g (cv:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd} 
+// Tcl Message: Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_btn Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_sw Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_video 
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 742 MB (+502kb) [00:02:19]
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 781 MB (+2185kb) [00:02:23]
+// [GUI Memory]: 104 MB (+1110kb) [00:02:24]
+// PAPropertyPanels.initPanels (hdmi_in.bd) elapsed time: 0.2s
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 781 MB. GUI used memory: 61 MB. Current time: 1/10/17 11:08:48 PM CET
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 976.945 ; gain = 4.633 
+dismissDialog("Open Block Design"); // bL:g (cv:JFrame)
+// Elapsed time: 58 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "xad"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "xadc"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "XADC Wizard", 0, "XADC Wizard", 0, false); // O:as (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "XADC Wizard", 0); // O:as (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "XADC Wizard", 0, "XADC Wizard", 0, false); // O:as (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "XADC Wizard", 0, "XADC Wizard", 0, false, false, false, false, false, true); // O:as (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// bL:g (cv:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z010clg400-1 
+// [Engine Memory]: 829 MB (+9452kb) [00:03:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 869 MB. GUI used memory: 61 MB. Current time: 1/10/17 11:09:58 PM CET
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 906 MB (+37155kb) [00:03:38]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1095.258 ; gain = 105.094 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Command: 'set_property location {1 17 793} [get_bd_cells xadc_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 17 793} [get_bd_cells xadc_wiz_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// P:bL (cv:JFrame):  Re-customize IP : addNotify
+// p:g (cv:JFrame): Re-customize IP: addNotify
+// [Engine Memory]: 961 MB (+10108kb) [00:03:58]
+// Elapsed time: 19 seconds
+dismissDialog("Re-customize IP"); // P:bL (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 67 MB. Current time: 1/10/17 11:10:23 PM CET
+selectRadioButton((HResource) null, "Independent ADC"); // cM:a
+// Elapsed time: 21 seconds
+selectRadioButton((HResource) null, "DRP"); // cM:a
+selectRadioButton((HResource) null, "AXI4Lite"); // cM:a
+selectRadioButton((HResource) null, "Independent ADC"); // cM:a (F:JPanel, p:g)
+selectRadioButton((HResource) null, "Single Channel"); // cM:a
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "ADC Setup", 1); // cR:g (F:JPanel, p:g)
+// Elapsed time: 12 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Alarms", 2); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Single Channel", 3); // cR:g (F:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cR:g (F:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cv:JFrame)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // i:l (JPanel:JComponent, cv:JFrame)
+// s:x (cv:JFrame): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, s:x)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Connection Automation"); // s:x (cv:JFrame)
+// bL:g (cv:JFrame):  Run Connection Automation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins xadc_wiz_0/s_axi_lite] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: </xadc_wiz_0/s_axi_lite/Reg> is being mapped into </processing_system7_0/Data> at <0x43C30000 [ 64K ]> 
+dismissDialog("Run Connection Automation"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 319 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ZYBO_Master.xdc]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, ZYBO_Master.xdc]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("ZYBO_Master.xdc", 176, 143); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 111 MB (+1484kb) [00:12:34]
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 106 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins xadc_wiz_0/s_axi_lite]' 
+// bL:g (cv:JFrame):  Undo : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Undo"); // bL:g (cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {1 17 793} [get_bd_cells xadc_wiz_0]' 
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // i:l (JPanel:JComponent, cv:JFrame)
+// s:x (cv:JFrame): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, s:x)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Connection Automation"); // s:x (cv:JFrame)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bL:g (cv:JFrame):  Run Connection Automation : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins xadc_wiz_0/s_axi_lite] 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: </xadc_wiz_0/s_axi_lite/Reg> is being mapped into </processing_system7_0/Data> at <0x43C30000 [ 64K ]> 
+dismissDialog("Run Connection Automation"); // bL:g (cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// bL:g (cv:JFrame):  Save Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd>  
+// Elapsed time: 10 seconds
+dismissDialog("Save Design"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,010 MB (+636kb) [00:14:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 59 MB. Current time: 1/10/17 11:20:48 PM CET
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [xilinx.com:ip:axi_vdma:6.2-15] /axi_vdma_0                      All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.vhd VHDL Output written to : C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,065 MB (+4797kb) [00:14:42]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,069 MB. GUI used memory: 52 MB. Current time: 1/10/17 11:21:08 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_regslice . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_regslice . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_data_fifo . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_regslice . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us_df . 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us_df . INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hw_handoff/hdmi_in.hwh 
+// [Engine Memory]: 1,118 MB (+263kb) [00:14:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 54 MB. Current time: 1/10/17 11:21:23 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: Generated Block Design Tcl file C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hw_handoff/hdmi_in_bd.tcl Generated Hardware Definition File C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdl/hdmi_in.hwdef 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Jan 10 23:21:30 2017] Launched synth_1... Run output will be captured here: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/synth_1/runme.log [Tue Jan 10 23:21:30 2017] Launched impl_1... Run output will be captured here: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1328.008 ; gain = 142.660 
+// Elapsed time: 54 seconds
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 1,201 MB (+28071kb) [00:33:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,201 MB. GUI used memory: 66 MB. Current time: 1/10/17 11:40:01 PM CET
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Implementation Completed: addNotify

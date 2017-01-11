@@ -78,6 +78,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpi
 # IP: bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpio_1_0 || ORIG_REF_NAME==hdmi_in_axi_gpio_1_0}]
 
+# IP: bd/hdmi_in/ip/hdmi_in_xadc_wiz_0_0_1/hdmi_in_xadc_wiz_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_xadc_wiz_0_0 || ORIG_REF_NAME==hdmi_in_xadc_wiz_0_0}]
+
 # IP: bd/hdmi_in/ip/hdmi_in_s00_regslice_0/hdmi_in_s00_regslice_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_s00_regslice_0 || ORIG_REF_NAME==hdmi_in_s00_regslice_0}]
 
@@ -213,6 +216,11 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpio_1_0 || ORIG_REF_NAME==hdmi_in_axi_gpio_1_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/hdmi_in/ip/hdmi_in_xadc_wiz_0_0_1/hdmi_in_xadc_wiz_0_0_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_xadc_wiz_0_0_1/hdmi_in_xadc_wiz_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_xadc_wiz_0_0 || ORIG_REF_NAME==hdmi_in_xadc_wiz_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/hdmi_in/ip/hdmi_in_s00_regslice_0/hdmi_in_s00_regslice_0_ooc.xdc
 
