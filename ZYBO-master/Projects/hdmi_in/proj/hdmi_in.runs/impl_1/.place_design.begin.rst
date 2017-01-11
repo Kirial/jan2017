@@ -1,5 +1,17 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
+<<<<<<< HEAD
     <Process Command=".planAhead." Owner="taras" Host="DESKTOP-VO6VFHC" Pid="1812">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Process Command=".planAhead." Owner="jespe" Host="THINKPAD" Pid="8620">
+=======
+    <Process Command=".planAhead." Owner="taras" Host="DESKTOP-VO6VFHC" Pid="716">
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
+    <Process Command=".planAhead." Owner="taras" Host="DESKTOP-VO6VFHC" Pid="716">
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+>>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
     </Process>
 </ProcessHandle>

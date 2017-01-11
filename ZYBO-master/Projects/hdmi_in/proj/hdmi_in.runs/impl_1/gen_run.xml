@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484086889">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484059835">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484060026">
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+=======
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484060026">
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+>>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
   <File Type="OPT-DCP" Name="hdmi_in_wrapper_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="hdmi_in_wrapper_route_status.pb"/>
   <File Type="PA-TCL" Name="hdmi_in_wrapper.tcl"/>

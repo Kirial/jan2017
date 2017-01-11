@@ -1,8 +1,20 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+<<<<<<< HEAD
 | Date         : Tue Jan 10 23:39:55 2017
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| Date         : Tue Jan 10 16:04:07 2017
+| Host         : Thinkpad running 64-bit major release  (build 9200)
+=======
+=======
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
+| Date         : Tue Jan 10 16:14:33 2017
+>>>>>>> a05f92493fac4f00e3aa5f972a47a3875c6c64c3
 | Host         : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
+>>>>>>> 4cbe83a3833a243091aab335c88a825e03edcd37
 | Command      : report_utilization -file hdmi_in_wrapper_utilization_synth.rpt -pb hdmi_in_wrapper_utilization_synth.pb
 | Design       : hdmi_in_wrapper
 | Device       : 7z010clg400-1
