@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Jan 10 22:55:18 2017'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Jan 11 12:06:44 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1577090" description="" />
-  <keyValuePair key="date_generated" value="Tue Jan 10 22:55:18 2017" description="" />
+  <keyValuePair key="date_generated" value="Wed Jan 11 12:06:44 2017" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2016.2 (64-bit)" description="" />
   <keyValuePair key="project_id" value="48aa2aa34604467f9cef12d626ff8bd4" description="" />
   <keyValuePair key="project_iteration" value="2" description="" />
-  <keyValuePair key="random_id" value="111e55a8101255b581c3d7deec8fb4b5" description="" />
-  <keyValuePair key="registration_id" value="111e55a8101255b581c3d7deec8fb4b5" description="" />
+  <keyValuePair key="random_id" value="26d6872c775b5118ae8e3908351b1d4e" description="" />
+  <keyValuePair key="registration_id" value="26d6872c775b5118ae8e3908351b1d4e" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
   <keyValuePair key="target_device" value="xc7z010" description="" />
   <keyValuePair key="target_family" value="zynq" description="" />
@@ -19,11 +19,11 @@
   <keyValuePair key="tool_flow" value="Vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz" description="" />
-  <keyValuePair key="cpu_speed" value="2295 MHz" description="" />
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2592 MHz" description="" />
   <keyValuePair key="os_name" value="Microsoft Windows 8 or later , 64-bit" description="" />
   <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
-  <keyValuePair key="system_ram" value="6.000 GB" description="" />
+  <keyValuePair key="system_ram" value="17.000 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="ip_statistics" level="1" order="3" description="">
@@ -60,7 +60,6 @@
    <keyValuePair key="c_axi_ruser_width" value="1" description="" />
    <keyValuePair key="c_axi_supports_user_signals" value="0" description="" />
    <keyValuePair key="c_axi_wuser_width" value="1" description="" />
-   <keyValuePair key="c_connectivity_mode" value="1" description="" />
    <keyValuePair key="c_family" value="zynq" description="" />
    <keyValuePair key="c_m_axi_addr_width" value="0x0000001d" description="" />
    <keyValuePair key="c_m_axi_base_addr" value="0x0000000000000000" description="" />
@@ -77,7 +76,8 @@
    <keyValuePair key="c_s_axi_base_id" value="0x0000000100000000" description="" />
    <keyValuePair key="c_s_axi_read_acceptance" value="0x0000000200000002" description="" />
    <keyValuePair key="c_s_axi_single_thread" value="0x0000000000000000" description="" />
-   <keyValuePair key="c_s_axi_thread_id_width" value="0x0000000000000000" description="" />
+   <keyValuePair key="c_s_axi_thread_id_width" value="0x000000000000
+0000" description="" />
    <keyValuePair key="c_s_axi_write_acceptance" value="0x0000000200000002" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
    <keyValuePair key="iptotal" value="1" description="" />
@@ -88,6 +88,7 @@
    <keyValuePair key="x_ipproduct" value="Vivado 2016.2" description="" />
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="1.00.a" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_crossbar_v2_1_10_axi_crossbar/2" level="2" order="3" description="">
@@ -104,10 +105,13 @@
    <keyValuePair key="c_connectivity_mode" value="0" description="" />
    <keyValuePair key="c_family" value="zynq" description="" />
    <keyValuePair key="c_m_axi_addr_width" value="0x00000010000000100000001000000010000000100000001000000010000000100000001000000010" description="" />
-   <keyValuePair key="c_m_axi_base_addr" value="0x0000000041250000000000004124000000000000412300000000000043c2000000000000430000000000000043c100000000000043c00000000000004122000000000000412100000000000041200000" description="" />
-   <keyValuePair key="c_m_axi_read_connectivity" value="0x00000001000000010000000100000001000000010000000100000001000000010000000100000001" description="" />
+   <keyValuePair key="c_m_axi_base_addr" value="0x0000000041250000000000004124000000000000412300000000000043c2000000000000430000000000000043c100000000000043c000000000000
+04122000000000000412100000000000041200000" description="" />
+   <keyValuePair key="c_m_axi_read_connectivity" value="0x000000010000000100000001
+00000001000000010000000100000001000000010000000100000001" description="" />
    <keyValuePair key="c_m_axi_read_issuing" value="0x00000001000000010000000100000001000000010000000100000001000000010000000100000001" description="" />
-   <keyValuePair key="c_m_axi_secure" value="0x00000000000000000000000000000000000000000000000000000000000000000000000000000000" description="" />
+   <keyValuePair key="c_m_axi_secure" value="0x000000000000000000000000000000000000000000000000000000000000000000
+00000000000000" description="" />
    <keyValuePair key="c_m_axi_write_connectivity" value="0x00000001000000010000000100000001000000010000000100000001000000010000000100000001" description="" />
    <keyValuePair key="c_m_axi_write_issuing" value="0x00000001000000010000000100000001000000010000000100000001000000010000000100000001" description="" />
    <keyValuePair key="c_num_addr_ranges" value="1" description="" />
@@ -144,7 +148,6 @@
    <keyValuePair key="c_axi_read_fifo_type" value="bram" description="" />
    <keyValuePair key="c_axi_ruser_width" value="1" description="" />
    <keyValuePair key="c_axi_supports_user_signals" value="0" description="" />
-   <keyValuePair key="c_axi_write_fifo_delay" value="1" description="" />
    <keyValuePair key="c_axi_write_fifo_depth" value="512" description="" />
    <keyValuePair key="c_axi_write_fifo_type" value="bram" description="" />
    <keyValuePair key="c_axi_wuser_width" value="1" description="" />
@@ -159,6 +162,7 @@
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_dwidth_converter_v2_1_9_top/1" level="2" order="5" description="">
    <keyValuePair key="c_axi_addr_width" value="32" description="" />
@@ -171,7 +175,6 @@
    <keyValuePair key="c_m_axi_aclk_ratio" value="2" description="" />
    <keyValuePair key="c_m_axi_data_width" value="64" description="" />
    <keyValuePair key="c_max_split_beats" value="16" description="" />
-   <keyValuePair key="c_packing_level" value="1" description="" />
    <keyValuePair key="c_s_axi_aclk_ratio" value="1" description="" />
    <keyValuePair key="c_s_axi_data_width" value="32" description="" />
    <keyValuePair key="c_s_axi_id_width" value="1" description="" />
@@ -187,6 +190,7 @@
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_dwidth_converter_v2_1_9_top/2" level="2" order="6" description="">
    <keyValuePair key="c_axi_addr_width" value="32" description="" />
@@ -199,7 +203,6 @@
    <keyValuePair key="c_m_axi_aclk_ratio" value="2" description="" />
    <keyValuePair key="c_m_axi_data_width" value="64" description="" />
    <keyValuePair key="c_max_split_beats" value="16" description="" />
-   <keyValuePair key="c_packing_level" value="1" description="" />
    <keyValuePair key="c_s_axi_aclk_ratio" value="1" description="" />
    <keyValuePair key="c_s_axi_data_width" value="32" description="" />
    <keyValuePair key="c_s_axi_id_width" value="1" description="" />
@@ -214,6 +217,7 @@
    <keyValuePair key="x_ipproduct" value="Vivado 2016.2" description="" />
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_gpio/1" level="2" order="7" description="">
@@ -417,7 +421,6 @@
    <keyValuePair key="c_axi_supports_read" value="1" description="" />
    <keyValuePair key="c_axi_supports_user_signals" value="0" description="" />
    <keyValuePair key="c_axi_supports_write" value="1" description="" />
-   <keyValuePair key="c_axi_wuser_width" value="1" description="" />
    <keyValuePair key="c_family" value="zynq" description="" />
    <keyValuePair key="c_ignore_id" value="0" description="" />
    <keyValuePair key="c_m_axi_protocol" value="2" description="" />
@@ -432,6 +435,7 @@
    <keyValuePair key="x_ipproduct" value="Vivado 2016.2" description="" />
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_register_slice_v2_1_9_axi_register_slice/1" level="2" order="15" description="">
@@ -448,7 +452,6 @@
    <keyValuePair key="c_family" value="zynq" description="" />
    <keyValuePair key="c_reg_config_ar" value="7" description="" />
    <keyValuePair key="c_reg_config_aw" value="7" description="" />
-   <keyValuePair key="c_reg_config_b" value="7" description="" />
    <keyValuePair key="c_reg_config_r" value="1" description="" />
    <keyValuePair key="c_reg_config_w" value="1" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
@@ -460,6 +463,7 @@
    <keyValuePair key="x_ipproduct" value="Vivado 2016.2" description="" />
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_register_slice_v2_1_9_axi_register_slice/2" level="2" order="16" description="">
@@ -476,7 +480,6 @@
    <keyValuePair key="c_family" value="zynq" description="" />
    <keyValuePair key="c_reg_config_ar" value="0" description="" />
    <keyValuePair key="c_reg_config_aw" value="7" description="" />
-   <keyValuePair key="c_reg_config_b" value="7" description="" />
    <keyValuePair key="c_reg_config_r" value="0" description="" />
    <keyValuePair key="c_reg_config_w" value="1" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
@@ -488,6 +491,7 @@
    <keyValuePair key="x_ipproduct" value="Vivado 2016.2" description="" />
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_register_slice_v2_1_9_axi_register_slice/3" level="2" order="17" description="">
@@ -504,7 +508,6 @@
    <keyValuePair key="c_family" value="zynq" description="" />
    <keyValuePair key="c_reg_config_ar" value="7" description="" />
    <keyValuePair key="c_reg_config_aw" value="0" description="" />
-   <keyValuePair key="c_reg_config_b" value="0" description="" />
    <keyValuePair key="c_reg_config_r" value="1" description="" />
    <keyValuePair key="c_reg_config_w" value="0" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
@@ -516,6 +519,7 @@
    <keyValuePair key="x_ipproduct" value="Vivado 2016.2" description="" />
    <keyValuePair key="x_ipsimlanguage" value="MIXED" description="" />
    <keyValuePair key="x_ipvendor" value="xilinx.com" description="" />
+   <keyValuePair key="x_ipversion" value="2.1" description="" />
    <keyValuePair key="x_ipversion" value="2.1" description="" />
   </section>
   <section name="axi_vdma/1" level="2" order="18" description="">
@@ -976,7 +980,6 @@
    <keyValuePair key="c_m_axi_gp0_thread_id_width" value="12" description="" />
    <keyValuePair key="c_m_axi_gp1_enable_static_remap" value="0" description="" />
    <keyValuePair key="c_m_axi_gp1_id_width" value="12" description="" />
-   <keyValuePair key="c_m_axi_gp1_thread_id_width" value="12" description="" />
    <keyValuePair key="c_mio_primitive" value="54" description="" />
    <keyValuePair key="c_num_f2p_intr_inputs" value="7" description="" />
    <keyValuePair key="c_package_name" value="clg400" description="" />
@@ -1010,6 +1013,7 @@
    <keyValuePair key="c_use_s_axi_hp3" value="0" description="" />
    <keyValuePair key="core_container" value="NA" description="" />
    <keyValuePair key="iptotal" value="1" description="" />
+   <keyValuePair key="pcw_wdt_peripheral_freqmhz" value="133.333333" description="" />
    <keyValuePair key="use_trace_data_edge_detector" value="0" description="" />
    <keyValuePair key="x_ipcorerevision" value="3" description="" />
    <keyValuePair key="x_iplanguage" value="VHDL" description="" />
@@ -1622,7 +1626,7 @@
    <keyValuePair key="nets" value="32392" description="" />
    <keyValuePair key="pins" value="138034" description="" />
    <keyValuePair key="pll" value="0" description="" />
-   <keyValuePair key="router_runtime" value="50.657000" description="" />
+   <keyValuePair key="router_runtime" value="37.220000" description="" />
    <keyValuePair key="router_timing_driven" value="1" description="" />
    <keyValuePair key="threads" value="2" description="" />
    <keyValuePair key="timing_constraints_exist" value="1" description="" />
@@ -1665,10 +1669,10 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:18:31s" description="" />
+   <keyValuePair key="elapsed" value="00:13:12s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="933.207MB" description="" />
-   <keyValuePair key="memory_peak" value="1229.473MB" description="" />
+   <keyValuePair key="memory_gain" value="933.973MB" description="" />
+   <keyValuePair key="memory_peak" value="1220.816MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="8" description="">
@@ -1750,7 +1754,7 @@
  </section>
  <section name="vivado_usage" level="1" order="9" description="">
   <section name="other_data" level="2" order="1" description="">
-   <keyValuePair key="guimode" value="6" description="" />
+   <keyValuePair key="guimode" value="1" description="" />
   </section>
   <section name="project_data" level="2" order="2" description="">
    <keyValuePair key="board" value="Zybo" description="" />
