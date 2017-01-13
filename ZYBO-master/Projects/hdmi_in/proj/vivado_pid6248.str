@@ -1,0 +1,100 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 6248
+
+Current time: 	1/11/17 1:30:05 PM CET
+Time zone: 	Central European Time (Europe/Prague)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x914
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	nb
+User home directory: C:/Users/nb
+User working directory: C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/nb/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/nb/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	181 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 426 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\nb\Documents\jan2017\ZYBO-master\Projects\hdmi_in\proj\hdmi_in.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 33 MB (+32320kb) [00:00:06]
+// [Engine Memory]: 415 MB (+284047kb) [00:00:06]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 453 MB. GUI used memory: 28 MB. Current time: 1/11/17 1:30:07 PM CET
+// [Engine Memory]: 461 MB (+25723kb) [00:00:11]
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 491 MB (+7942kb) [00:00:16]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 553 MB (+38592kb) [00:00:17]
+// [GUI Memory]: 38 MB (+3396kb) [00:00:18]
+// [Engine Memory]: 609 MB (+29548kb) [00:00:18]
+// [GUI Memory]: 43 MB (+3609kb) [00:00:18]
+// [GUI Memory]: 50 MB (+4795kb) [00:00:18]
+// [GUI Memory]: 54 MB (+956kb) [00:00:19]
+// [GUI Memory]: 59 MB (+2296kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 64 MB (+2415kb) [00:00:21]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: hdmi_in; location: C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 868.586 ; gain = 228.281 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 639 MB (+50kb) [00:00:24]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 68 MB (+903kb) [00:00:32]
+// Elapsed time: 12 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.sdk -hwspec C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.sdk -hwspec C:/Users/nb/Documents/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 72 MB (+950kb) [00:01:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 674 MB. GUI used memory: 43 MB. Current time: 1/11/17 1:31:53 PM CET
+// [Engine Memory]: 674 MB (+2768kb) [00:01:55]

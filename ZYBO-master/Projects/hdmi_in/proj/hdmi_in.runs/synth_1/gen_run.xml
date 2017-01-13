@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484131494">
   <File Type="RDS-PROPCONSTRS" Name="hdmi_in_wrapper_drc_synth.rpt"/>
+=======
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484083764">
+>>>>>>> b940ac1ccb658452bce417e0b6356db630544842
   <File Type="PA-TCL" Name="hdmi_in_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="hdmi_in_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="hdmi_in_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="hdmi_in_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="hdmi_in_wrapper_utilization_synth.pb"/>
