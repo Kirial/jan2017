@@ -53,6 +53,43 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_dynclk_0_0/hdmi_in_axi_dynclk_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_dvi2rgb_0_0/hdmi_in_dvi2rgb_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_xbar_0/hdmi_in_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_mem_intercon_0/hdmi_in_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_gpio_video_0/hdmi_in_axi_gpio_video_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_gpio_sw_0/hdmi_in_axi_gpio_sw_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_gpio_led_0/hdmi_in_axi_gpio_led_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_gpio_btn_0/hdmi_in_axi_gpio_btn_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="hw_handoff/hdmi_in.hwh"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="hdmi_in_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_auto_pc_1/hdmi_in_auto_pc_1.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_auto_us_df_1/hdmi_in_auto_us_df_1.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_auto_us_df_0/hdmi_in_auto_us_df_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_m00_regslice_0/hdmi_in_m00_regslice_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_m00_data_fifo_0/hdmi_in_m00_data_fifo_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_s01_regslice_0/hdmi_in_s01_regslice_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_s00_regslice_0/hdmi_in_s00_regslice_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_axi_gpio_0_0/hdmi_in_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="hdl/hdmi_in.vhd"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_xlconstant_0_0/hdmi_in_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_xlconcat_0_0/hdmi_in_xlconcat_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_auto_pc_0/hdmi_in_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_proc_sys_reset_0_0/hdmi_in_proc_sys_reset_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_v_vid_in_axi4s_0_0/hdmi_in_v_vid_in_axi4s_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_v_tc_0_0/hdmi_in_v_tc_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_v_axi4s_vid_out_0_0/hdmi_in_v_axi4s_vid_out_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_rst_processing_system7_0_150M_0/hdmi_in_rst_processing_system7_0_150M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_processing_system7_0_axi_periph_0/hdmi_in_processing_system7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_rgb2vga_0_0/hdmi_in_rgb2vga_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_xbar_1/hdmi_in_xbar_1.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_processing_system7_0_0/hdmi_in_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="ip/hdmi_in_rst_processing_system7_0_100M_0/hdmi_in_rst_processing_system7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="hdl/hdmi_in.hwdef"/>
+        <CompFileExtendedInfo CompFileName="hdmi_in.bd" FileRelPathName="hw_handoff/hdmi_in_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_in/hdl/hdmi_in_wrapper.vhd">
         <FileInfo>

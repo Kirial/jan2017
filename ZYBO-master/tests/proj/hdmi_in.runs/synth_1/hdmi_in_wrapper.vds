@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Jan 10 22:29:25 2017
-# Process ID: 9340
+# Start of session at: Thu Jan 12 23:48:50 2017
+# Process ID: 8648
 # Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.runs/synth_1
 # Command line: vivado.exe -log hdmi_in_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source hdmi_in_wrapper.tcl
 # Log file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.runs/synth_1/hdmi_in_wrapper.vds
@@ -14,15 +14,15 @@ WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 295.191 ; gain = 88.449
+add_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 295.625 ; gain = 89.320
 Command: synth_design -top hdmi_in_wrapper -part xc7z010clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8592 
+INFO: Helper process launched with PID 4072 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 394.711 ; gain = 187.969
+Starting RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:01:00 . Memory (MB): peak = 394.793 ; gain = 188.488
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-1565] actual for formal port rst is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:225]
 WARNING: [Synth 8-1565] actual for formal port s1_clkout0 is neither a static name nor a globally static expression [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/digilentinc.com/axi_dynclk_v1_0/src/axi_dynclk.vhd:227]
@@ -25142,7 +25142,7 @@ WARNING: [Synth 8-3331] design fifo_generator_v13_0_3_rd_bin_cntr__parameterized
 WARNING: [Synth 8-3331] design fifo_generator_v13_0_3_rd_logic__parameterized0 has unconnected port RAM_WR_EN
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:13:55 ; elapsed = 00:14:27 . Memory (MB): peak = 967.805 ; gain = 761.063
+Finished RTL Elaboration : Time (s): cpu = 00:16:55 ; elapsed = 00:20:30 . Memory (MB): peak = 966.891 ; gain = 760.586
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -25152,7 +25152,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:13:59 ; elapsed = 00:14:32 . Memory (MB): peak = 967.805 ; gain = 761.063
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:17:01 ; elapsed = 00:20:41 . Memory (MB): peak = 966.891 ; gain = 760.586
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 949 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -25207,7 +25207,7 @@ Parsing XDC File [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYB
 Finished Parsing XDC File [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xdc] for cell 'hdmi_in_i/axi_gpio_1/U0'
 INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc]
-WARNING: [Constraints 18-619] A clock with name 'TMDS_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc:117]
+WARNING: [Constraints 18-619] A clock with name 'TMDS_clk_p' already exists, overwriting the previous clock with the same name. [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc:118]
 Finished Parsing XDC File [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_in_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_in_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -25244,9 +25244,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.298 . Memory (MB): peak = 1091.020 ; gain = 0.391
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.497 . Memory (MB): peak = 1089.891 ; gain = 0.391
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:14:48 ; elapsed = 00:15:22 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished Constraint Validation : Time (s): cpu = 00:18:02 ; elapsed = 00:21:54 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -25254,8 +25254,9 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:14:48 ; elapsed = 00:15:22 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished Loading Part and Timing Information : Time (s): cpu = 00:18:02 ; elapsed = 00:21:54 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
+INFO: Vivado Synthesis caught shared memory exception 'Den angivne fil blev ikke fundet.'. Continuing without using shared memory (or continuing without helper parallel flow)
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
@@ -25311,7 +25312,7 @@ Applied set_property DONT_TOUCH = true for hdmi_in_i/v_vid_in_axi4s_0. (constrai
 Applied set_property DONT_TOUCH = true for hdmi_in_i/xlconcat_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_in_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:14:50 ; elapsed = 00:15:24 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:18:04 ; elapsed = 00:21:56 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "STAT_REG" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -25491,7 +25492,7 @@ INFO: [Synth 8-5544] ROM "p_0_in6" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "p_0_in5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:15:35 ; elapsed = 00:16:20 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:18:56 ; elapsed = 00:23:22 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -29577,14 +29578,14 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:15:38 ; elapsed = 00:16:23 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:19:00 ; elapsed = 00:23:27 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:15:38 ; elapsed = 00:16:23 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished Cross Boundary Optimization : Time (s): cpu = 00:19:00 ; elapsed = 00:23:27 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:15:38 ; elapsed = 00:16:23 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished Parallel Reinference  : Time (s): cpu = 00:19:00 ; elapsed = 00:23:27 . Memory (MB): peak = 1090.355 ; gain = 884.051
 
 Report RTL Partitions: 
 +------+-------------------+------------+----------+
@@ -29930,9 +29931,9 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (hdmi_in_i
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (hdmi_in_i/i_0/axi_vdma_0/U0/I_AXI_DMA_INTRPT/\GEN_INCLUDE_MM2S.GEN_CH1_FRM_CNTR.ch1_irqthresh_decr_mask_sig_reg )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:16:35 ; elapsed = 00:17:29 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished Area Optimization : Time (s): cpu = 00:20:05 ; elapsed = 00:24:47 . Memory (MB): peak = 1090.355 ; gain = 884.051
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:16:35 ; elapsed = 00:17:29 . Memory (MB): peak = 1091.465 ; gain = 884.723
+Finished Parallel Area Optimization  : Time (s): cpu = 00:20:05 ; elapsed = 00:24:47 . Memory (MB): peak = 1090.355 ; gain = 884.051
 
 Report RTL Partitions: 
 +------+---------------------+------------+----------+
@@ -29954,7 +29955,7 @@ WARNING: [Synth 8-565] redefining clock 'dvi2rgb_0_PixelClk'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'v_vid_in_axi4s_0/inst/vid_io_in_reset' to pin '{proc_sys_reset_0/U0/PR_OUT_DFF[0].peripheral_reset_reg[0]/Q}'
 INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:16:52 ; elapsed = 00:17:47 . Memory (MB): peak = 1172.324 ; gain = 965.582
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:20:24 ; elapsed = 00:25:07 . Memory (MB): peak = 1173.355 ; gain = 967.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -29973,16 +29974,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:17:31 ; elapsed = 00:18:36 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished Technology Mapping : Time (s): cpu = 00:21:12 ; elapsed = 00:26:13 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:17:31 ; elapsed = 00:18:36 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:21:12 ; elapsed = 00:26:13 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:17:31 ; elapsed = 00:18:36 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:21:12 ; elapsed = 00:26:13 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -30106,7 +30107,7 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ipshared/xilinx.com/axi_dwidth_converter_v2_1/hdl/verilog/axi_dwidth_converter_v2_1_r_upsizer_pktfifo.v:1410]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:17:37 ; elapsed = 00:18:41 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished IO Insertion : Time (s): cpu = 00:21:19 ; elapsed = 00:26:22 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -30119,7 +30120,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:17:37 ; elapsed = 00:18:42 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:21:20 ; elapsed = 00:26:23 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -30131,7 +30132,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:17:38 ; elapsed = 00:18:43 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:21:21 ; elapsed = 00:26:24 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -31169,12 +31170,11 @@ Report Instance Areas:
 |925   |    xlconstant_0                                                                                                     |hdmi_in_xlconstant_0_0                                                           |     0|
 +------+---------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:17:38 ; elapsed = 00:18:43 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Finished Writing Synthesis Report : Time (s): cpu = 00:21:21 ; elapsed = 00:26:24 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 518 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:57 ; elapsed = 00:17:50 . Memory (MB): peak = 1229.473 ; gain = 807.941
-INFO: Vivado Synthesis caught shared memory exception 'Den angivne fil blev ikke fundet.'. Continuing without using shared memory (or continuing without parallel flow)
-Synthesis Optimization Complete : Time (s): cpu = 00:17:38 ; elapsed = 00:18:43 . Memory (MB): peak = 1229.473 ; gain = 1022.730
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:29 ; elapsed = 00:24:53 . Memory (MB): peak = 1228.867 ; gain = 808.207
+Synthesis Optimization Complete : Time (s): cpu = 00:21:21 ; elapsed = 00:26:28 . Memory (MB): peak = 1228.867 ; gain = 1022.563
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 985 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -31195,7 +31195,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1808 Infos, 334 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:17:49 ; elapsed = 00:18:53 . Memory (MB): peak = 1244.844 ; gain = 949.652
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1244.844 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.270 . Memory (MB): peak = 1244.844 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 10 22:48:41 2017...
+synth_design: Time (s): cpu = 00:21:28 ; elapsed = 00:26:21 . Memory (MB): peak = 1244.332 ; gain = 948.707
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1244.332 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 1244.332 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 13 00:16:02 2017...
