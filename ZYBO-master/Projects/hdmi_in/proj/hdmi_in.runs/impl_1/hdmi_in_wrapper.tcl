@@ -49,7 +49,7 @@ start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint hdmi_in_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Projects/jan2017/ZYBO-master/Projects/hdmi_in/proj/hdmi_in.cache/wt [current_project]
   catch { write_mem_info -force hdmi_in_wrapper.mmi }
   write_bitstream -force hdmi_in_wrapper.bit 
   catch { write_sysdef -hwdef hdmi_in_wrapper.hwdef -bitfile hdmi_in_wrapper.bit -meminfo hdmi_in_wrapper.mmi -file hdmi_in_wrapper.sysdef }

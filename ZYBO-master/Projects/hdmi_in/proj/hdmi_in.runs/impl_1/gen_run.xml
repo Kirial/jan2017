@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484131494">
+  <File Type="OPT-DCP" Name="hdmi_in_wrapper_opt.dcp"/>
+=======
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1484083764">
+>>>>>>> b940ac1ccb658452bce417e0b6356db630544842
   <File Type="ROUTE-STATUS-PB" Name="hdmi_in_wrapper_route_status.pb"/>
   <File Type="PA-TCL" Name="hdmi_in_wrapper.tcl"/>
   <File Type="OPT-DCP" Name="hdmi_in_wrapper_opt.dcp"/>
