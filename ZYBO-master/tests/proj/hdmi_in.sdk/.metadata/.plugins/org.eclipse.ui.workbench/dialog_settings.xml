@@ -22,8 +22,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+<<<<<<< HEAD
 			<item value="C:\Projects\jan2017\Code"/>
 			<item value="C:\Users\jespe\OneDrive\Dokumenter\Arduino\libraries\SharpIR"/>
+=======
+>>>>>>> parent of 6df33b0... digitale io færdig
 			<item value="C:\Users\taras\OneDrive\skolenProjekt\3UgersProjektJan2017\ZYBO-master\Projects\hdmi_in\sdk"/>
 		</list>
 	</section>

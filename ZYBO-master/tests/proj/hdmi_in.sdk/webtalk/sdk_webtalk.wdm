@@ -20,6 +20,7 @@ clients =
 	{ client_name = "sdk"; 
 		rules = (
 			{
+<<<<<<< HEAD
 				context="sdk\\\\hardware/1484315765899";
 				xml_map="sdk\\\\hardware/1484315765899";
 				html_map="sdk\\\\hardware/1484315765899";
@@ -35,6 +36,11 @@ clients =
 				context="sdk\\\\application/1484316351578";
 				xml_map="sdk\\\\application/1484316351578";
 				html_map="sdk\\\\application/1484316351578";
+=======
+				context="sdk\\\\hardware/1484261449890";
+				xml_map="sdk\\\\hardware/1484261449890";
+				html_map="sdk\\\\hardware/1484261449890";
+>>>>>>> parent of 6df33b0... digitale io færdig
 				html_format="UnisimStatsStyle";
 			}
 		);
