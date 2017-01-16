@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;TarasTest_bsp_xqspips_flash_lqspi_example_1&apos;" deleteContents="false" description="Delete resource &apos;TarasTest_bsp_xqspips_flash_lqspi_example_1&apos;" element1="/TarasTest_bsp_xqspips_flash_lqspi_example_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1484571394604"/>&#x0A;<refactoring comment="Delete resource &apos;ZC702_hw_platform&apos;" deleteContents="false" description="Delete resource &apos;ZC702_hw_platform&apos;" element1="/ZC702_hw_platform" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1484571413456"/>
-</session>
