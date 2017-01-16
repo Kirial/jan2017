@@ -193,20 +193,20 @@ set_property IOSTANDARD LVCMOS33 [get_ports ddc_sda_io]
 
 ##Pmod Header JB
 ##IO_L15N_T2_DQS_34
-#set_property PACKAGE_PIN U20 [get_ports {jb_n[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[0]}]
+set_property PACKAGE_PIN U20 [get_ports {spi_rtl_io0_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_rtl_io0_io}]
 
 ##IO_L15P_T2_DQS_34
-#set_property PACKAGE_PIN T20 [get_ports {jb_p[0]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[0]}]
+set_property PACKAGE_PIN T20 [get_ports {spi_rtl_io1_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_rtl_io1_io}]
 
 ##IO_L16N_T2_34
-#set_property PACKAGE_PIN W20 [get_ports {jb_n[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_n[1]}]
+set_property PACKAGE_PIN W20 [get_ports {spi_rtl_ss_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_rtl_ss_io}]
 
 ##IO_L16P_T2_34
-#set_property PACKAGE_PIN V20 [get_ports {jb_p[1]}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {jb_p[1]}]
+set_property PACKAGE_PIN V20 [get_ports {spi_rtl_sck_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_rtl_sck_io}]
 
 ##IO_L17N_T2_34
 #set_property PACKAGE_PIN Y19 [get_ports {jb_n[2]}]
