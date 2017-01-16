@@ -1,0 +1,17 @@
+/*
+ * anal.c
+ *
+ *  Created on: 16/01/2017
+ *      Author: taras
+ */
+
+void set(){
+	Status = LinearQspiFlashExample(&QspiInstance, QSPI_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Linear QSPI FLASH Example Test Failed\r\n");
+		return XST_FAILURE;
+	}
+
+
+}
+

@@ -1,0 +1,42 @@
+#ifndef DISPLAY_C
+#define DISPLAY_C
+
+// Strings
+
+char* initDisplayStr = "Initializing display. \nTesting some colors.\n";
+char* initDisplayDoneStr = "Display ready.\n";
+
+// Functions
+
+int *displayFrame;
+long displayWidth, displayHeight, displayStride;
+
+void display_init(int *frame, long width, long height, long stride) {
+
+	struct color red = {255,0,0};
+	struct color green = {0,255,0};
+	struct color blue = {0,0,255};
+	struct color white = {255,255,255};
+	struct color black = {0,0,0};
+
+  console(initDisplayStr);
+
+  *displayFrame = *frame;
+  displayWidth = width;
+  displayHeight = height;
+  displayStride = stride;
+
+  draw_background(&black);
+  draw_background(&red);
+  draw_background(&green);
+  draw_background(&blue);
+  draw_background(&white);
+
+  draw_pixel(200,200,&black);
+  draw_pixel(300,300,&black);
+  draw_pixel(400,400,&black);
+
+  console(initDisplayDoneStr);
+}
+
+#endif

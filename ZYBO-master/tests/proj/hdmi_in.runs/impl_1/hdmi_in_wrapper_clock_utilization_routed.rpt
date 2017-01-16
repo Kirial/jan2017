@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date              : Fri Jan 13 00:23:02 2017
+| Date              : Sun Jan 15 22:15:12 2017
 | Host              : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file hdmi_in_wrapper_clock_utilization_routed.rpt
 | Design            : hdmi_in_wrapper
@@ -26,10 +26,11 @@ Table of Contents
 10. Cell Type Counts per Global Clock: Region X1Y1
 11. Load Cell Placement Summary for Global Clock g0
 12. Load Cell Placement Summary for Global Clock g1
-13. Load Cell Placement Summary for Global Clock g3
+13. Load Cell Placement Summary for Global Clock g2
 14. Load Cell Placement Summary for Global Clock g4
 15. Load Cell Placement Summary for Global Clock g5
-16. Load Cell Placement Summary for Global Clock g2
+16. Load Cell Placement Summary for Global Clock g6
+17. Load Cell Placement Summary for Global Clock g3
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -37,7 +38,7 @@ Table of Contents
 +----------+------+-----------+-----+--------------+--------+
 | Type     | Used | Available | LOC | Clock Region | Pblock |
 +----------+------+-----------+-----+--------------+--------+
-| BUFGCTRL |    3 |        32 |   0 |            0 |      0 |
+| BUFGCTRL |    4 |        32 |   0 |            0 |      0 |
 | BUFH     |    0 |        48 |   0 |            0 |      0 |
 | BUFIO    |    1 |         8 |   0 |            0 |      0 |
 | BUFMR    |    0 |         4 |   0 |            0 |      0 |
@@ -54,11 +55,12 @@ Table of Contents
 | GlbID | SrcId | Driver Type/Pin | Constraint | Site          | Clock Region | Root | Clock Delay Group | Clock Regions | Clock Loads | Non-Clock Loads | Clock Period | Clock                  | Driver Pin                                                              | Net                                             |
 +-------+-------+-----------------+------------+---------------+--------------+------+-------------------+---------------+-------------+-----------------+--------------+------------------------+-------------------------------------------------------------------------+-------------------------------------------------+
 | g0    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |      |                   |             4 |        7049 |               0 |        7.000 | clk_fpga_1             | hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1   |
-| g1    | src1  | BUFR/O          | None       | BUFR_X0Y5     | X1Y1         |      |                   |             1 |        2560 |               0 |        8.334 | dvi2rgb_0_PixelClk     | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClkBuffer/O                  | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClk  |
-| g2    | src1  | BUFIO/O         | None       | BUFIO_X0Y5    | X1Y1         |      |                   |             1 |          12 |               0 |        1.667 | I_1                    | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClkBuffer/O                 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClk |
-| g3    | src2  | BUFR/O          | None       | BUFR_X0Y1     | X1Y0         |      |                   |             1 |        2444 |               0 |       10.000 | axi_dynclk_0_PXL_CLK_O | hdmi_in_i/axi_dynclk_0/U0/BUFR_inst/O                                   | hdmi_in_i/axi_dynclk_0/U0/PXL_CLK_O             |
-| g4    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |      |                   |             4 |        2335 |               0 |       10.000 | clk_fpga_0             | hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0   |
-| g5    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |      |                   |             1 |         162 |               0 |        5.000 | clk_fpga_2             | hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O | hdmi_in_i/processing_system7_0/inst/FCLK_CLK2   |
+| g1    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |      |                   |             4 |        6122 |               0 |       10.000 | clk_fpga_0             | hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0   |
+| g2    | src1  | BUFR/O          | None       | BUFR_X0Y5     | X1Y1         |      |                   |             1 |        2560 |               0 |        8.334 | dvi2rgb_0_PixelClk     | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClkBuffer/O                  | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClk  |
+| g3    | src1  | BUFIO/O         | None       | BUFIO_X0Y5    | X1Y1         |      |                   |             1 |          12 |               0 |        1.667 | I_1                    | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClkBuffer/O                 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClk |
+| g4    | src2  | BUFR/O          | None       | BUFR_X0Y1     | X1Y0         |      |                   |             1 |        2444 |               0 |       10.000 | axi_dynclk_0_PXL_CLK_O | hdmi_in_i/axi_dynclk_0/U0/BUFR_inst/O                                   | hdmi_in_i/axi_dynclk_0/U0/PXL_CLK_O             |
+| g5    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |      |                   |             2 |         241 |               0 |       20.000 | clk_fpga_3             | hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_3.FCLK_CLK_3_BUFG/O | hdmi_in_i/processing_system7_0/inst/FCLK_CLK3   |
+| g6    | src0  | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |      |                   |             1 |         162 |               0 |        5.000 | clk_fpga_2             | hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O | hdmi_in_i/processing_system7_0/inst/FCLK_CLK2   |
 +-------+-------+-----------------+------------+---------------+--------------+------+-------------------+---------------+-------------+-----------------+--------------+------------------------+-------------------------------------------------------------------------+-------------------------------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -69,11 +71,12 @@ Table of Contents
 +-------+--------+--------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+--------------+-----------------------------------------------------------------+------------------------------------------------------------+
 | SrcID | GlbIDs | Driver Type/Pin    | Constraint | Site            | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                      | Net                                                        |
 +-------+--------+--------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+--------------+-----------------------------------------------------------------+------------------------------------------------------------+
-| src0  | g4     | PS7/FCLKCLK[0]     | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           0 |               1 |              10.000 | clk_fpga_0   | hdmi_in_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]            | hdmi_in_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |
+| src0  | g1     | PS7/FCLKCLK[0]     | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           0 |               1 |              10.000 | clk_fpga_0   | hdmi_in_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]            | hdmi_in_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |
 | src0  | g0     | PS7/FCLKCLK[1]     | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           0 |               1 |               7.000 | clk_fpga_1   | hdmi_in_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]            | hdmi_in_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1] |
-| src0  | g5     | PS7/FCLKCLK[2]     | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           0 |               1 |               5.000 | clk_fpga_2   | hdmi_in_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]            | hdmi_in_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2] |
-| src1  | g1, g2 | MMCME2_ADV/CLKOUT0 | None       | MMCME2_ADV_X0Y1 | X1Y1         |           1 |               1 |               1.667 | I_1          | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator/CLKOUT0  | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/I                    |
-| src2  | g3     | MMCME2_ADV/CLKOUT0 | None       | MMCME2_ADV_X0Y0 | X1Y0         |           0 |               1 |               2.000 | I            | hdmi_in_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst/CLKOUT0 | hdmi_in_i/axi_dynclk_0/U0/Inst_mmcme2_drp/PXL_CLK          |
+| src0  | g6     | PS7/FCLKCLK[2]     | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           0 |               1 |               5.000 | clk_fpga_2   | hdmi_in_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]            | hdmi_in_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2] |
+| src0  | g5     | PS7/FCLKCLK[3]     | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           0 |               1 |              20.000 | clk_fpga_3   | hdmi_in_i/processing_system7_0/inst/PS7_i/FCLKCLK[3]            | hdmi_in_i/processing_system7_0/inst/FCLK_CLK_unbuffered[3] |
+| src1  | g2, g3 | MMCME2_ADV/CLKOUT0 | None       | MMCME2_ADV_X0Y1 | X1Y1         |           1 |               1 |               1.667 | I_1          | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/DVI_ClkGenerator/CLKOUT0  | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/I                    |
+| src2  | g4     | MMCME2_ADV/CLKOUT0 | None       | MMCME2_ADV_X0Y0 | X1Y0         |           0 |               1 |               2.000 | I            | hdmi_in_i/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_adv_inst/CLKOUT0 | hdmi_in_i/axi_dynclk_0/U0/Inst_mmcme2_drp/PXL_CLK          |
 +-------+--------+--------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+--------------+-----------------------------------------------------------------+------------------------------------------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -95,10 +98,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2579 |  8800 |  138 |  1600 |    0 |     0 |    3 |    10 |    0 |    20 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2655 |  8800 |  102 |  1400 |    0 |     0 |    5 |    20 |    0 |    20 |
-| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1959 |  8800 |   97 |  1600 |    0 |     0 |    6 |    10 |    0 |    20 |
-| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    6 |    50 |    0 |    50 | 2251 |  8800 |   63 |  1400 |    0 |     0 |    3 |    20 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3418 |  8800 |  190 |  1600 |    0 |     0 |    4 |    10 |    0 |    20 |
+| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    2 |    50 |    1 |    50 | 3480 |  8800 |  106 |  1400 |    0 |     0 |   10 |    20 |    0 |    20 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2555 |  8800 |  141 |  1600 |    0 |     0 |    0 |    10 |    0 |    20 |
+| X1Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    6 |    50 |    0 |    50 | 3157 |  8800 |  126 |  1400 |    0 |     0 |    3 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Used Global Clocks includes only global clock resources based on load placement but does not consider global clock resources used to traverse a clock region. Therefore the actual total of Used Global Clocks may be higher.
 ** RAMB36 site can be used as two RAMB18/FIFO18 sites.
@@ -110,8 +113,8 @@ Table of Contents
 +----+----+----+
 |    | X0 | X1 |
 +----+----+----+
-| Y1 |  2 |  5 |
-| Y0 |  2 |  3 |
+| Y1 |  2 |  6 |
+| Y0 |  2 |  4 |
 +----+----+----+
 * Used Global Clocks includes only global clock resources based on load placement but does not consider global clock resources used to traverse a clock region. Therefore the actual total of Used Global Clocks may be higher.
 
@@ -122,8 +125,8 @@ Table of Contents
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
 | GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                           |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
-| g0    | n/a   | BUFG/O          | None       |           0 |            2224 | 2220 |    127 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
-| g4    | n/a   | BUFG/O          | None       |           0 |             360 |  360 |     12 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0    | n/a   | BUFG/O          | None       |           0 |            3096 | 3089 |    173 |    5 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
+| g1    | n/a   | BUFG/O          | None       |           0 |             333 |  333 |     21 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -134,9 +137,10 @@ Table of Contents
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
 | GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                           |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
-| g0    | n/a   | BUFG/O          | None       |           0 |             838 |  831 |     74 |    6 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
-| g3    | n/a   | BUFR/O          | None       |           0 |            1690 | 1684 |     24 |    5 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/axi_dynclk_0/U0/PXL_CLK_O           |
-| g4    | n/a   | BUFG/O          | None       |           1 |             147 |  147 |     11 |    0 |   0 |  0 |    1 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0    | n/a   | BUFG/O          | None       |           0 |            1455 | 1445 |     69 |   10 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
+| g1    | n/a   | BUFG/O          | None       |           1 |             389 |  389 |     15 |    0 |   0 |  0 |    1 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
+| g4    | n/a   | BUFR/O          | None       |           0 |            1656 | 1650 |     26 |    5 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/axi_dynclk_0/U0/PXL_CLK_O           |
+| g5    | n/a   | BUFG/O          | None       |           0 |               4 |    1 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK3 |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -147,8 +151,8 @@ Table of Contents
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
 | GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                           |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
-| g0    | n/a   | BUFG/O          | None       |           0 |            1187 | 1180 |     62 |    6 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
-| g4    | n/a   | BUFG/O          | None       |           0 |             784 |  783 |     39 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0    | n/a   | BUFG/O          | None       |           0 |               1 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
+| g1    | n/a   | BUFG/O          | None       |           0 |            2556 | 2555 |    141 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -159,11 +163,12 @@ Table of Contents
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
 | GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| g0    | n/a   | BUFG/O          | None       |           0 |              70 |   67 |      6 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1   |
-| g1    | n/a   | BUFR/O          | None       |           0 |            1693 | 1681 |     28 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClk  |
-| g4    | n/a   | BUFG/O          | None       |           0 |             399 |  399 |     22 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0   |
-| g5    | n/a   | BUFG/O          | None       |           0 |             109 |  108 |     11 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK2   |
-| g2    | n/a   | BUFIO/O         | None       |           0 |               6 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClk |
+| g0    | n/a   | BUFG/O          | None       |           0 |              60 |   57 |      3 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1   |
+| g1    | n/a   | BUFG/O          | None       |           0 |            1055 | 1055 |     67 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0   |
+| g2    | n/a   | BUFR/O          | None       |           0 |            1783 | 1771 |     29 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClk  |
+| g5    | n/a   | BUFG/O          | None       |           0 |             152 |  152 |     19 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK3   |
+| g6    | n/a   | BUFG/O          | None       |           0 |             127 |  126 |     12 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK2   |
+| g3    | n/a   | BUFIO/O         | None       |           0 |               6 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClk |
 +-------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -174,43 +179,61 @@ Table of Contents
 +-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
 | GlbID | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                           |
 +-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
-| g0    | BUFG/O          | n/a               | clk_fpga_1 |       7.000 | {0.000 3.500} |          |        4319 |        0 |           0 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
+| g0    | BUFG/O          | n/a               | clk_fpga_1 |       7.000 | {0.000 3.500} |          |        4612 |        0 |           0 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK1 |
 +-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
 
 
-+----+-------+------+
-|    | X0    | X1   |
-+----+-------+------+
-| Y1 |  1187 |   70 |
-| Y0 |  2224 |  838 |
-+----+-------+------+
++----+-------+-------+
+|    | X0    | X1    |
++----+-------+-------+
+| Y1 |     1 |    60 |
+| Y0 |  3096 |  1455 |
++----+-------+-------+
 
 
 12. Load Cell Placement Summary for Global Clock g1
 ---------------------------------------------------
 
++-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                           |
++-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
+| g1    | BUFG/O          | n/a               | clk_fpga_0 |      10.000 | {0.000 5.000} |          |        4333 |        0 |           1 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
++-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
+
+
++----+-------+-------+
+|    | X0    | X1    |
++----+-------+-------+
+| Y1 |  2556 |  1055 |
+| Y0 |   333 |   390 |
++----+-------+-------+
+
+
+13. Load Cell Placement Summary for Global Clock g2
+---------------------------------------------------
+
 +-------+-----------------+-------------------+--------------------+-------------+---------------+----------+-------------+----------+-------------+----+------------------------------------------------+
 | GlbID | Driver Type/Pin | Driver Region (D) | Clock              | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                            |
 +-------+-----------------+-------------------+--------------------+-------------+---------------+----------+-------------+----------+-------------+----+------------------------------------------------+
-| g1    | BUFR/O          | X1Y1              | dvi2rgb_0_PixelClk |       8.334 | {0.000 3.334} |          |        1687 |        6 |           0 |  0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClk |
+| g2    | BUFR/O          | X1Y1              | dvi2rgb_0_PixelClk |       8.334 | {0.000 3.334} |          |        1777 |        6 |           0 |  0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/PixelClk |
 +-------+-----------------+-------------------+--------------------+-------------+---------------+----------+-------------+----------+-------------+----+------------------------------------------------+
 
 
 +----+----+-----------+
 |    | X0 | X1        |
 +----+----+-----------+
-| Y1 |  0 |  (D) 1693 |
+| Y1 |  0 |  (D) 1783 |
 | Y0 |  0 |         0 |
 +----+----+-----------+
 
 
-13. Load Cell Placement Summary for Global Clock g3
+14. Load Cell Placement Summary for Global Clock g4
 ---------------------------------------------------
 
 +-------+-----------------+-------------------+------------------------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------+
 | GlbID | Driver Type/Pin | Driver Region (D) | Clock                  | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                 |
 +-------+-----------------+-------------------+------------------------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------+
-| g3    | BUFR/O          | X1Y0              | axi_dynclk_0_PXL_CLK_O |      10.000 | {0.000 4.000} |          |        1690 |        0 |           0 |  0 | hdmi_in_i/axi_dynclk_0/U0/PXL_CLK_O |
+| g4    | BUFR/O          | X1Y0              | axi_dynclk_0_PXL_CLK_O |      10.000 | {0.000 4.000} |          |        1656 |        0 |           0 |  0 | hdmi_in_i/axi_dynclk_0/U0/PXL_CLK_O |
 +-------+-----------------+-------------------+------------------------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------+
 
 
@@ -218,53 +241,53 @@ Table of Contents
 |    | X0 | X1        |
 +----+----+-----------+
 | Y1 |  0 |         0 |
-| Y0 |  0 |  (D) 1690 |
+| Y0 |  0 |  (D) 1656 |
 +----+----+-----------+
-
-
-14. Load Cell Placement Summary for Global Clock g4
----------------------------------------------------
-
-+-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
-| GlbID | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                           |
-+-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
-| g4    | BUFG/O          | n/a               | clk_fpga_0 |      10.000 | {0.000 5.000} |          |        1690 |        0 |           1 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK0 |
-+-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
-
-
-+----+------+------+
-|    | X0   | X1   |
-+----+------+------+
-| Y1 |  784 |  399 |
-| Y0 |  360 |  148 |
-+----+------+------+
 
 
 15. Load Cell Placement Summary for Global Clock g5
 ---------------------------------------------------
 
++-------+-----------------+-------------------+------------+-------------+----------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
+| GlbID | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns)  | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                           |
++-------+-----------------+-------------------+------------+-------------+----------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
+| g5    | BUFG/O          | n/a               | clk_fpga_3 |      20.000 | {0.000 10.000} |          |         156 |        0 |           0 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK3 |
++-------+-----------------+-------------------+------------+-------------+----------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
+
+
++----+----+------+
+|    | X0 | X1   |
++----+----+------+
+| Y1 |  0 |  152 |
+| Y0 |  0 |    4 |
++----+----+------+
+
+
+16. Load Cell Placement Summary for Global Clock g6
+---------------------------------------------------
+
 +-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
 | GlbID | Driver Type/Pin | Driver Region (D) | Clock      | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                           |
 +-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
-| g5    | BUFG/O          | n/a               | clk_fpga_2 |       5.000 | {0.000 2.500} |          |         109 |        0 |           0 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK2 |
+| g6    | BUFG/O          | n/a               | clk_fpga_2 |       5.000 | {0.000 2.500} |          |         127 |        0 |           0 |  0 | hdmi_in_i/processing_system7_0/inst/FCLK_CLK2 |
 +-------+-----------------+-------------------+------------+-------------+---------------+----------+-------------+----------+-------------+----+-----------------------------------------------+
 
 
 +----+----+------+
 |    | X0 | X1   |
 +----+----+------+
-| Y1 |  0 |  109 |
+| Y1 |  0 |  127 |
 | Y0 |  0 |    0 |
 +----+----+------+
 
 
-16. Load Cell Placement Summary for Global Clock g2
+17. Load Cell Placement Summary for Global Clock g3
 ---------------------------------------------------
 
 +-------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------------------+
 | GlbID | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Root (R) | Slice Loads | IO Loads | Clock Loads | GT | Net                                             |
 +-------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------------------+
-| g2    | BUFIO/O         | X1Y1              | I_1   |       1.667 | {0.000 0.833} |          |           0 |        6 |           0 |  0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClk |
+| g3    | BUFIO/O         | X1Y1              | I_1   |       1.667 | {0.000 0.833} |          |           0 |        6 |           0 |  0 | hdmi_in_i/dvi2rgb_0/U0/TMDS_ClockingX/SerialClk |
 +-------+-----------------+-------------------+-------+-------------+---------------+----------+-------------+----------+-------------+----+-------------------------------------------------+
 
 
@@ -278,7 +301,8 @@ Table of Contents
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y2 [get_cells hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG]
+set_property LOC BUFGCTRL_X0Y2 [get_cells hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_3.FCLK_CLK_3_BUFG]
+set_property LOC BUFGCTRL_X0Y3 [get_cells hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG]
 set_property LOC BUFGCTRL_X0Y0 [get_cells hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG]
 set_property LOC BUFGCTRL_X0Y1 [get_cells hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
 
@@ -295,7 +319,14 @@ set_property LOC BUFR_X0Y1 [get_cells hdmi_in_i/axi_dynclk_0/U0/BUFR_inst]
 set_property LOC IOB_X0Y73 [get_ports TMDS_clk_n]
 set_property LOC IOB_X0Y74 [get_ports TMDS_clk_p]
 
-# Clock net "hdmi_in_i/processing_system7_0/inst/FCLK_CLK2" driven by instance "hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG" located at site "BUFGCTRL_X0Y2"
+# Clock net "hdmi_in_i/processing_system7_0/inst/FCLK_CLK3" driven by instance "hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_3.FCLK_CLK_3_BUFG" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock {CLKAG_hdmi_in_i/processing_system7_0/inst/FCLK_CLK3}
+add_cells_to_pblock [get_pblocks  {CLKAG_hdmi_in_i/processing_system7_0/inst/FCLK_CLK3}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="hdmi_in_i/processing_system7_0/inst/FCLK_CLK3"}]]]
+resize_pblock [get_pblocks {CLKAG_hdmi_in_i/processing_system7_0/inst/FCLK_CLK3}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "hdmi_in_i/processing_system7_0/inst/FCLK_CLK2" driven by instance "hdmi_in_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG" located at site "BUFGCTRL_X0Y3"
 #startgroup
 create_pblock {CLKAG_hdmi_in_i/processing_system7_0/inst/FCLK_CLK2}
 add_cells_to_pblock [get_pblocks  {CLKAG_hdmi_in_i/processing_system7_0/inst/FCLK_CLK2}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="hdmi_in_i/processing_system7_0/inst/FCLK_CLK2"}]]]
