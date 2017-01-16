@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Jan 15 15:20:33 2017
+# Process ID: 18840
+# Current directory: C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2188 C:\Projects\jan2017\ZYBO-master\tests\JesperTest\proj\hdmi_in.xpr
+# Log file: C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/vivado.log
+# Journal file: C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk -hwspec C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf
+file mkdir C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk
+file copy -force C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.runs/impl_1/hdmi_in_wrapper.sysdef C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf
+
+launch_sdk -workspace C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk -hwspec C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf
+open_bd_design {C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd}
+launch_sdk -workspace C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk -hwspec C:/Projects/jan2017/ZYBO-master/tests/JesperTest/proj/hdmi_in.sdk/hdmi_in_wrapper.hdf

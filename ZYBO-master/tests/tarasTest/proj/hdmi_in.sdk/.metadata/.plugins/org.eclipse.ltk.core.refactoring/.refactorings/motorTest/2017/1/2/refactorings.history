@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;motorTest/src/Steppermotostyring.h&apos; to &apos;Motorstyring.h&apos;" description="Rename resource &apos;Steppermotostyring.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Steppermotostyring.h" name="Motorstyring.h" stamp="1484500632187" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;motorTest/src/Steppermotostyring.c&apos; to &apos;Motorstyring.c&apos;" description="Rename resource &apos;Steppermotostyring.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Steppermotostyring.c" name="Motorstyring.c" stamp="1484500673668" updateReferences="true"/>
+</session>
