@@ -1,0 +1,8 @@
+#ifndef COLOR_H
+#define COLOR_H
+
+#include "color.c"
+
+void colorFramePixel(int *frame, long addr, color *color);
+
+#endif

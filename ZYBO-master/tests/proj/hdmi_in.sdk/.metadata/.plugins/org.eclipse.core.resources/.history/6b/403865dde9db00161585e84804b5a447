@@ -1,0 +1,15 @@
+/*
+ * anal.h
+ *
+ *  Created on: 16/01/2017
+ *      Author: taras
+ */
+
+#ifndef SRC_ANAL_H_
+#define SRC_ANAL_H_
+
+#define QSPI_DEVICE_ID		XPAR_XQSPIPS_0_DEVICE_ID
+static XQspiPs QspiInstance;
+void set();
+
+#endif /* SRC_ANAL_H_ */
