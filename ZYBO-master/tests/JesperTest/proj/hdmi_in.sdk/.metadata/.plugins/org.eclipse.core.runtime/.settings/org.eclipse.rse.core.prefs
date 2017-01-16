@@ -1,4 +1,3 @@
-activeuserprofiles=DESKTOP-VO6VFHC;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=taras
-useridperkey=DESKTOP-VO6VFHC.Local\=taras;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=jespe
+useridperkey=Thinkpad.Local\=jespe;

@@ -1,0 +1,25 @@
+/*
+ * Steppermotostyring.h
+ *
+ *  Created on: 15/01/2017
+ *      Author: jespe
+ */
+
+#ifndef SRC_STEPPERMOTOSTYRING_H_
+#define SRC_STEPPERMOTOSTYRING_H_
+
+
+#include "IOJD.h"
+#include "sleep.h"
+#include <stdio.h>
+
+void step1();
+void step2();
+void step3();
+void step4();
+
+
+void rollForward();
+
+
+#endif /* SRC_STEPPERMOTOSTYRING_H_ */

@@ -1,0 +1,39 @@
+
+
+void rollForward()){
+
+step1()
+step2()
+step3()
+step4()
+
+}
+
+void step1() {
+
+  JDStat = JDStat & (0xff ^ (1 << 0));
+  JDStat = JDStat | (1 << 1);
+  JDStat = JDStat | (1 << 2);
+  JDStat = JDStat | (1 << 3);
+}
+void step2() {
+
+  JDStat = JDStat & (0xff ^ (1 << 2));
+  JDStat = JDStat | (1 << 1);
+  JDStat = JDStat | (1 << 0);
+  JDStat = JDStat | (1 << 3);
+}
+void step3() {
+
+  JDStat = JDStat & (0xff ^ (1 << 1));
+  JDStat = JDStat | (1 << 0);
+  JDStat = JDStat | (1 << 2);
+  JDStat = JDStat | (1 << 3);
+}
+void step4() {
+
+  JDStat = JDStat & (0xff ^ (1 << 3));
+  JDStat = JDStat | (1 << 1);
+  JDStat = JDStat | (1 << 2);
+  JDStat = JDStat | (1 << 0);
+}

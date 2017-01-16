@@ -1,0 +1,45 @@
+
+#include "IOJD.h"
+#include <stdio.h>
+#include "sleep.h"
+
+
+void step1() {
+
+  JDStat = JDStat & (0xff ^ (1 << 0));
+  JDStat = JDStat | (1 << 1);
+  JDStat = JDStat | (1 << 2);
+  JDStat = JDStat | (1 << 3);
+}
+void step2() {
+
+  JDStat = JDStat & (0xff ^ (1 << 2));
+  JDStat = JDStat | (1 << 1);
+  JDStat = JDStat | (1 << 0);
+  JDStat = JDStat | (1 << 3);
+}
+void step3() {
+
+  JDStat = JDStat & (0xff ^ (1 << 1));
+  JDStat = JDStat | (1 << 0);
+  JDStat = JDStat | (1 << 2);
+  JDStat = JDStat | (1 << 3);
+}
+void step4() {
+
+  JDStat = JDStat & (0xff ^ (1 << 3));
+  JDStat = JDStat | (1 << 1);
+  JDStat = JDStat | (1 << 2);
+  JDStat = JDStat | (1 << 0);
+}
+
+void rollForward() {
+  step1();
+  usleep(10);
+  step2();
+  usleep(10);
+  step3();
+  usleep(10);
+  step4();
+  usleep(10);
+}
