@@ -78,6 +78,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpi
 # IP: bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpio_1_0 || ORIG_REF_NAME==hdmi_in_axi_gpio_1_0}]
 
+# IP: bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_axi_quad_spi_0_0 || ORIG_REF_NAME==hdmi_in_axi_quad_spi_0_0}]
+
 # IP: bd/hdmi_in/ip/hdmi_in_s00_regslice_0/hdmi_in_s00_regslice_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_s00_regslice_0 || ORIG_REF_NAME==hdmi_in_s00_regslice_0}]
 
@@ -101,6 +104,36 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_us
 
 # IP: bd/hdmi_in/ip/hdmi_in_auto_pc_1/hdmi_in_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_1 || ORIG_REF_NAME==hdmi_in_auto_pc_1}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_2/hdmi_in_auto_pc_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_2 || ORIG_REF_NAME==hdmi_in_auto_pc_2}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_3/hdmi_in_auto_pc_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_3 || ORIG_REF_NAME==hdmi_in_auto_pc_3}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_4/hdmi_in_auto_pc_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_4 || ORIG_REF_NAME==hdmi_in_auto_pc_4}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_5/hdmi_in_auto_pc_5.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_5 || ORIG_REF_NAME==hdmi_in_auto_pc_5}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_6/hdmi_in_auto_pc_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_6 || ORIG_REF_NAME==hdmi_in_auto_pc_6}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_7/hdmi_in_auto_pc_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_7 || ORIG_REF_NAME==hdmi_in_auto_pc_7}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_8/hdmi_in_auto_pc_8.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_8 || ORIG_REF_NAME==hdmi_in_auto_pc_8}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_9/hdmi_in_auto_pc_9.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_9 || ORIG_REF_NAME==hdmi_in_auto_pc_9}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_10/hdmi_in_auto_pc_10.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_10 || ORIG_REF_NAME==hdmi_in_auto_pc_10}]
+
+# IP: bd/hdmi_in/ip/hdmi_in_auto_pc_11/hdmi_in_auto_pc_11.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_in_auto_pc_11 || ORIG_REF_NAME==hdmi_in_auto_pc_11}]
 
 # XDC: bd/hdmi_in/ip/hdmi_in_axi_gpio_btn_0/hdmi_in_axi_gpio_btn_0_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpio_btn_0 || ORIG_REF_NAME==hdmi_in_axi_gpio_btn_0}] {/U0 }]/U0 ]]
@@ -214,6 +247,17 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_axi_gpio_1_0 || ORIG_REF_NAME==hdmi_in_axi_gpio_1_0}] {/U0 }]/U0 ]]
 
+# XDC: bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_axi_quad_spi_0_0 || ORIG_REF_NAME==hdmi_in_axi_quad_spi_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_axi_quad_spi_0_0 || ORIG_REF_NAME==hdmi_in_axi_quad_spi_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_axi_quad_spi_0_0 || ORIG_REF_NAME==hdmi_in_axi_quad_spi_0_0}] {/U0 }]/U0 ]]
+
 # XDC: bd/hdmi_in/ip/hdmi_in_s00_regslice_0/hdmi_in_s00_regslice_0_ooc.xdc
 
 # XDC: bd/hdmi_in/ip/hdmi_in_s01_regslice_0/hdmi_in_s01_regslice_0_ooc.xdc
@@ -235,5 +279,25 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_in_auto_us_df_1 || ORIG_REF_NAME==hdmi_in_auto_us_df_1}] {/inst }]/inst ]]
 
 # XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_1/hdmi_in_auto_pc_1_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_2/hdmi_in_auto_pc_2_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_3/hdmi_in_auto_pc_3_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_4/hdmi_in_auto_pc_4_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_5/hdmi_in_auto_pc_5_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_6/hdmi_in_auto_pc_6_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_7/hdmi_in_auto_pc_7_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_8/hdmi_in_auto_pc_8_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_9/hdmi_in_auto_pc_9_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_10/hdmi_in_auto_pc_10_ooc.xdc
+
+# XDC: bd/hdmi_in/ip/hdmi_in_auto_pc_11/hdmi_in_auto_pc_11_ooc.xdc
 
 # XDC: bd/hdmi_in/hdmi_in_ooc.xdc

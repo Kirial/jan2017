@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Fri Jan 13 00:20:32 2017
+| Date         : Sun Jan 15 22:13:26 2017
 | Host         : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
 | Command      : report_io -file hdmi_in_wrapper_io_placed.rpt
 | Design       : hdmi_in_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           190 |
+|           194 |
 +---------------+
 
 
@@ -352,7 +352,7 @@ Table of Contents
 | T17        | gpio_rtl_tri_i[6]    | High Range | IO_L20P_T3_34           | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | T18        |                      | High Range | VCCO_34                 | VCCO          |                   |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
 | T19        |                      | High Range | IO_25_34                | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| T20        |                      | High Range | IO_L15P_T2_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| T20        | spi_rtl_io1_io       | High Range | IO_L15P_T2_DQS_34       | BIDIR         | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | U1         |                      |            | VCCO_DDR_502            | VCCO          |                   |         |            |      |                     |                      |   any** |            |           |          |      |                  |
 | U2         | DDR_dq[22]           |            | PS_DDR_DQ22_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | U3         | DDR_dq[23]           |            | PS_DDR_DQ23_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
@@ -372,7 +372,7 @@ Table of Contents
 | U17        | gpio_rtl_tri_i[5]    | High Range | IO_L9N_T1_DQS_34        | INPUT         | LVCMOS33          |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | U18        |                      | High Range | IO_L12P_T1_MRCC_34      | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | U19        |                      | High Range | IO_L12N_T1_MRCC_34      | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| U20        |                      | High Range | IO_L15N_T2_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| U20        | spi_rtl_io0_io       | High Range | IO_L15N_T2_DQS_34       | BIDIR         | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | V1         | DDR_dq[24]           |            | PS_DDR_DQ24_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | V2         | DDR_dq[30]           |            | PS_DDR_DQ30_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | V3         | DDR_dq[31]           |            | PS_DDR_DQ31_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
@@ -392,7 +392,7 @@ Table of Contents
 | V17        | gpio_rtl_0_tri_o[7]  | High Range | IO_L21P_T3_DQS_34       | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | V18        | gpio_rtl_0_tri_o[6]  | High Range | IO_L21N_T3_DQS_34       | OUTPUT        | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | V19        |                      |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
-| V20        |                      | High Range | IO_L16P_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| V20        | spi_rtl_sck_io       | High Range | IO_L16P_T2_34           | BIDIR         | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | W1         | DDR_dq[26]           |            | PS_DDR_DQ26_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | W2         |                      |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | W3         | DDR_dq[29]           |            | PS_DDR_DQ29_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
@@ -412,7 +412,7 @@ Table of Contents
 | W17        |                      | High Range | VCCO_34                 | VCCO          |                   |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
 | W18        |                      | High Range | IO_L22P_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | W19        |                      | High Range | IO_L22N_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| W20        |                      | High Range | IO_L16N_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| W20        | spi_rtl_ss_io[0]     | High Range | IO_L16N_T2_34           | BIDIR         | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | Y1         | DDR_dm[3]            |            | PS_DDR_DM3_502          | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | Y2         | DDR_dq[28]           |            | PS_DDR_DQ28_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | Y3         | DDR_dq[25]           |            | PS_DDR_DQ25_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |

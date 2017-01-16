@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
---Date        : Tue Jan 10 10:31:44 2017
+--Date        : Sun Jan 15 21:49:32 2017
 --Host        : DESKTOP-VO6VFHC running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_in_wrapper.bd
 --Design      : hdmi_in_wrapper
@@ -48,6 +48,10 @@ entity hdmi_in_wrapper is
     iic_0_scl_io : inout STD_LOGIC;
     iic_0_sda_io : inout STD_LOGIC;
     leds_4bits_tri_io : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    spi_rtl_io0_io : inout STD_LOGIC;
+    spi_rtl_io1_io : inout STD_LOGIC;
+    spi_rtl_sck_io : inout STD_LOGIC;
+    spi_rtl_ss_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
     sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     vga_b : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_g : out STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -103,14 +107,26 @@ architecture STRUCTURE of hdmi_in_wrapper is
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    gpio_rtl_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    gpio_rtl_0_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    spi_rtl_io0_i : in STD_LOGIC;
+    spi_rtl_io0_o : out STD_LOGIC;
+    spi_rtl_io0_t : out STD_LOGIC;
+    spi_rtl_io1_i : in STD_LOGIC;
+    spi_rtl_io1_o : out STD_LOGIC;
+    spi_rtl_io1_t : out STD_LOGIC;
+    spi_rtl_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    spi_rtl_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    spi_rtl_ss_t : out STD_LOGIC;
     vga_b : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_g : out STD_LOGIC_VECTOR ( 5 downto 0 );
     vga_hs : out STD_LOGIC;
     vga_r : out STD_LOGIC_VECTOR ( 4 downto 0 );
     vga_vs : out STD_LOGIC;
     HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 );
-    gpio_rtl_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio_rtl_0_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    spi_rtl_sck_i : in STD_LOGIC;
+    spi_rtl_sck_o : out STD_LOGIC;
+    spi_rtl_sck_t : out STD_LOGIC
   );
   end component hdmi_in;
   component IOBUF is
@@ -149,6 +165,19 @@ architecture STRUCTURE of hdmi_in_wrapper is
   signal leds_4bits_tri_t_1 : STD_LOGIC_VECTOR ( 1 to 1 );
   signal leds_4bits_tri_t_2 : STD_LOGIC_VECTOR ( 2 to 2 );
   signal leds_4bits_tri_t_3 : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal spi_rtl_io0_i : STD_LOGIC;
+  signal spi_rtl_io0_o : STD_LOGIC;
+  signal spi_rtl_io0_t : STD_LOGIC;
+  signal spi_rtl_io1_i : STD_LOGIC;
+  signal spi_rtl_io1_o : STD_LOGIC;
+  signal spi_rtl_io1_t : STD_LOGIC;
+  signal spi_rtl_sck_i : STD_LOGIC;
+  signal spi_rtl_sck_o : STD_LOGIC;
+  signal spi_rtl_sck_t : STD_LOGIC;
+  signal spi_rtl_ss_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal spi_rtl_ss_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal spi_rtl_ss_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal spi_rtl_ss_t : STD_LOGIC;
 begin
 ddc_scl_iobuf: component IOBUF
      port map (
@@ -220,6 +249,18 @@ hdmi_in_i: component hdmi_in
       leds_4bits_tri_t(2) => leds_4bits_tri_t_2(2),
       leds_4bits_tri_t(1) => leds_4bits_tri_t_1(1),
       leds_4bits_tri_t(0) => leds_4bits_tri_t_0(0),
+      spi_rtl_io0_i => spi_rtl_io0_i,
+      spi_rtl_io0_o => spi_rtl_io0_o,
+      spi_rtl_io0_t => spi_rtl_io0_t,
+      spi_rtl_io1_i => spi_rtl_io1_i,
+      spi_rtl_io1_o => spi_rtl_io1_o,
+      spi_rtl_io1_t => spi_rtl_io1_t,
+      spi_rtl_sck_i => spi_rtl_sck_i,
+      spi_rtl_sck_o => spi_rtl_sck_o,
+      spi_rtl_sck_t => spi_rtl_sck_t,
+      spi_rtl_ss_i(0) => spi_rtl_ss_i_0(0),
+      spi_rtl_ss_o(0) => spi_rtl_ss_o_0(0),
+      spi_rtl_ss_t => spi_rtl_ss_t,
       sws_4bits_tri_i(3 downto 0) => sws_4bits_tri_i(3 downto 0),
       vga_b(4 downto 0) => vga_b(4 downto 0),
       vga_g(5 downto 0) => vga_g(5 downto 0),
@@ -268,5 +309,33 @@ leds_4bits_tri_iobuf_3: component IOBUF
       IO => leds_4bits_tri_io(3),
       O => leds_4bits_tri_i_3(3),
       T => leds_4bits_tri_t_3(3)
+    );
+spi_rtl_io0_iobuf: component IOBUF
+     port map (
+      I => spi_rtl_io0_o,
+      IO => spi_rtl_io0_io,
+      O => spi_rtl_io0_i,
+      T => spi_rtl_io0_t
+    );
+spi_rtl_io1_iobuf: component IOBUF
+     port map (
+      I => spi_rtl_io1_o,
+      IO => spi_rtl_io1_io,
+      O => spi_rtl_io1_i,
+      T => spi_rtl_io1_t
+    );
+spi_rtl_sck_iobuf: component IOBUF
+     port map (
+      I => spi_rtl_sck_o,
+      IO => spi_rtl_sck_io,
+      O => spi_rtl_sck_i,
+      T => spi_rtl_sck_t
+    );
+spi_rtl_ss_iobuf_0: component IOBUF
+     port map (
+      I => spi_rtl_ss_o_0(0),
+      IO => spi_rtl_ss_io(0),
+      O => spi_rtl_ss_i_0(0),
+      T => spi_rtl_ss_t
     );
 end STRUCTURE;

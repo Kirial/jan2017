@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -103,6 +104,10 @@ set rc [catch {
   set_property processing_order EARLY [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0_board.xdc]
   read_xdc -ref hdmi_in_axi_gpio_1_0 -cells U0 c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xdc
   set_property processing_order EARLY [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_gpio_1_0/hdmi_in_axi_gpio_1_0.xdc]
+  read_xdc -prop_thru_buffers -ref hdmi_in_axi_quad_spi_0_0 -cells U0 c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_board.xdc]
+  read_xdc -ref hdmi_in_axi_quad_spi_0_0 -cells U0 c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0.xdc
+  set_property processing_order EARLY [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0.xdc]
   read_xdc C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc
   read_xdc -ref hdmi_in_axi_vdma_0_0 -cells U0 c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0_clocks.xdc
   set_property processing_order LATE [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_vdma_0_0/hdmi_in_axi_vdma_0_0_clocks.xdc]
@@ -114,6 +119,8 @@ set rc [catch {
   set_property processing_order LATE [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_v_tc_1_0/hdmi_in_v_tc_1_0_clocks.xdc]
   read_xdc -ref hdmi_in_v_vid_in_axi4s_0_0 -cells inst c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_v_vid_in_axi4s_0_0/hdmi_in_v_vid_in_axi4s_0_0_clocks.xdc
   set_property processing_order LATE [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_v_vid_in_axi4s_0_0/hdmi_in_v_vid_in_axi4s_0_0_clocks.xdc]
+  read_xdc -ref hdmi_in_axi_quad_spi_0_0 -cells U0 c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_clocks.xdc
+  set_property processing_order LATE [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_axi_quad_spi_0_0/hdmi_in_axi_quad_spi_0_0_clocks.xdc]
   read_xdc -ref hdmi_in_auto_us_df_0 -cells inst c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_auto_us_df_0/hdmi_in_auto_us_df_0_clocks.xdc
   set_property processing_order LATE [get_files c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_auto_us_df_0/hdmi_in_auto_us_df_0_clocks.xdc]
   read_xdc -ref hdmi_in_auto_us_df_1 -cells inst c:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/ip/hdmi_in_auto_us_df_1/hdmi_in_auto_us_df_1_clocks.xdc

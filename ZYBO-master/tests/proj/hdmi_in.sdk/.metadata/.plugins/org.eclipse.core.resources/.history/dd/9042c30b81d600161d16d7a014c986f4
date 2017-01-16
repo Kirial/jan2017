@@ -1,0 +1,20 @@
+#ifndef COLOR_H
+#define COLOR_H
+
+#include "color.c"
+
+struct color {
+  int red;
+  int green;
+  int blue;
+};
+
+struct color red;
+struct color green;
+struct color blue;
+struct color white;
+struct color black;
+
+void colorFramePixel(int *frame, long addr, struct color *color);
+
+#endif

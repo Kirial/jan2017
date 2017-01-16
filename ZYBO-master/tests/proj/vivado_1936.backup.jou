@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jan 10 21:59:57 2017
+# Process ID: 1936
+# Current directory: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4784 C:\Users\taras\OneDrive\skolenProjekt\3UgersProjektJan2017\ZYBO-master\tests\proj\hdmi_in.xpr
+# Log file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/vivado.log
+# Journal file: C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/proj/hdmi_in.srcs/sources_1/bd/hdmi_in/hdmi_in.bd}
+remove_files -fileset constrs_1 C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/Projects/hdmi_in/src/constraints/ZYBO_Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc
+remove_files -fileset constrs_1 C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/taras/OneDrive/skolenProjekt/3UgersProjektJan2017/ZYBO-master/tests/ZYBO_Master.xdc
